@@ -37,4 +37,5 @@ echo $a, PHP_EOL;
  * include --> dostalem warning
  * require --> dostajemy fatal error
  *
+ *
  */
