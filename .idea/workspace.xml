@@ -97,11 +97,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cast_object.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cast_object.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cast_object.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="589">
               <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/file.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -124,6 +134,7 @@
         <option value="$PROJECT_DIR$/cast_int.php" />
         <option value="$PROJECT_DIR$/cast_array.php" />
         <option value="$PROJECT_DIR$/cast_object.php" />
+        <option value="$PROJECT_DIR$/file.php" />
       </list>
     </option>
   </component>
@@ -133,7 +144,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="C:\xampp\htdocs\bitbucket\php3" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="60" />
     <option name="y" value="21" />
@@ -205,7 +220,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3113000" />
+    <option name="totallyTimeSpent" value="3428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="974" height="1090" extended-state="0" />
@@ -454,6 +469,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding />
         </state>
       </provider>
