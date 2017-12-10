@@ -7,12 +7,12 @@
  */
 
 $typesExamples = [
-    0, -6, 14
+    0, -6, 14,
     true, false,
     null,
     3.1415, "Darek",
-    "", PHP_EOL,
+    '', PHP_EOL,
 
 
 ];
-var_dump($typesExamples)
+var_dump($typesExamples);
