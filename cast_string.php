@@ -6,22 +6,30 @@
  * Time: 14:58
  */
 
-$var= 5; 5.5; null; false; true; 'php'; '4php';
+$var= 5;
 $cast= (string) $var;
 var_dump($var, $cast);
 
-var= 5; 5.5; null; false; true; 'php'; '4php';
+var=  5.5;
 $cast= (string) $var;
 var_dump($var, $cast);
 
-var= 5; 5.5; null; false; true; 'php'; '4php';
+var=  null;
 $cast= (string) $var;
 var_dump($var, $cast);
 
-var= 5; 5.5; null; false; true; 'php'; '4php';
+var= false;
 $cast= (string) $var;
 var_dump($var, $cast);
 
-var= 5; 5.5; null; false; true; 'php'; '4php';
+var=  true;
+$cast= (string) $var;
+var_dump($var, $cast);
+
+var= 'php';
+$cast= (string) $var;
+var_dump($var, $cast);
+
+var= '4php';
 $cast= (string) $var;
 var_dump($var, $cast);
