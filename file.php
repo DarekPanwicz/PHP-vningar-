@@ -19,23 +19,13 @@ require 'another.php';
 echo $a, PHP_EOL;
 
 
-$a= 3;
-include_once 'another.php';
-#require 'another.php';
-
-echo $a, PHP_EOL;
-
-
-$a= 3;
-require_once 'another.php';
-#require 'another.php';
-
-echo $a, PHP_EOL;
 
 
 /**
  * include --> dostalem warning
  * require --> dostajemy fatal error
+ *
+ * najlepiej stosowac require_once
  *
  *
  */
