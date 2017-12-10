@@ -5,6 +5,7 @@
  * Date: 2017-12-10
  * Time: 14:35
  */
+//Referencje
 
 $firstName = "Darek";
 $secondName = &$firstName;
