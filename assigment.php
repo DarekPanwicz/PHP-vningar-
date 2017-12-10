@@ -8,6 +8,7 @@
 
 $b = 3;
 $c = 150;
+//Idziemy z prawej strony do lewej strony
 $a = $b = $c;
 echo $a, PHP_EOL;
 
