@@ -1,4 +1,5 @@
 <?php
+// echo, print, printf, var_dump
 
 echo 'Laczymy kilka tekstow';
 echo' dodajac kolejne "echo".';
