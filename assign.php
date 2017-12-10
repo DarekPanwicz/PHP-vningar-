@@ -7,7 +7,18 @@
  */
 
 $name = 'Bobik';
+
+/**
+ * imie
+ */
+
+
 $roomsCounter = 13;
+
+/**
+ * ilosc pokoj
+ */
+
 $currentBandName = $name;
 echo $name;
 print ($roomsCounter);
