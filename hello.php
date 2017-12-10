@@ -9,9 +9,9 @@
 
 echo 'Hello, world!';
 
-echo 'Oto tekst
-zlozony z kilku linii.';
-echo 'Dodajemy\'apostrof\'do stringa.';
-echo 'Znaki nowej linii to \n';
-echo 'Zmienna to $zmienna';
+echo "Oto tekst
+zlozony z kilku linii.";
+echo "Dodajemy\'apostrof\'do stringa.";
+echo "Znaki nowej linii to \n";
+echo "Zmienna to $zmienna";
     
