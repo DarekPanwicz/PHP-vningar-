@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="907bc3d9-9750-4f3a-9cac-d7e36c006983" name="Default" comment="" />
+    <list default="true" id="907bc3d9-9750-4f3a-9cac-d7e36c006983" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ternerius.php" afterPath="$PROJECT_DIR$/ternerius.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,16 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="concat.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/concat.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="assign.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assign.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,11 +99,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ternerius.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ternerius.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ternerius.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <state relative-caret-position="217">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="number.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/number.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -137,6 +139,7 @@
         <option value="$PROJECT_DIR$/simple.php" />
         <option value="$PROJECT_DIR$/decrement.php" />
         <option value="$PROJECT_DIR$/ternerius.php" />
+        <option value="$PROJECT_DIR$/number.php" />
       </list>
     </option>
   </component>
@@ -216,12 +219,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512894478650</updated>
-      <workItem from="1512894480965" duration="10682000" />
+      <workItem from="1512894480965" duration="11504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10682000" />
+    <option name="totallyTimeSpent" value="11504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="974" height="1090" extended-state="0" />
@@ -339,8 +342,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ternerius.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="217">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/number.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
