@@ -7,7 +7,7 @@
 $name = 'Bobik';
 
 /**
- * ilosc pokoj.
+ * Ilosc pokoj.
  *
  * * @var int
  */
