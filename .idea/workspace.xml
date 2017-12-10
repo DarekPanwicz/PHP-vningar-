@@ -67,11 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assigment.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="assigment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assigment.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
               <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="challenge.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/challenge.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -92,6 +102,7 @@
         <option value="$PROJECT_DIR$/left.php" />
         <option value="$PROJECT_DIR$/right.php" />
         <option value="$PROJECT_DIR$/assigment.php" />
+        <option value="$PROJECT_DIR$/challenge.php" />
       </list>
     </option>
   </component>
@@ -171,12 +182,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512894478650</updated>
-      <workItem from="1512894480965" duration="7668000" />
+      <workItem from="1512894480965" duration="8332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7668000" />
+    <option name="totallyTimeSpent" value="8332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="974" height="1090" extended-state="0" />
@@ -256,6 +267,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding />
         </state>
       </provider>
