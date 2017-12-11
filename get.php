@@ -1,6 +1,7 @@
 <?php
 /**
-Tu bede pisal moj testowy kod :D
+ *
+ * How get works :D
  */
 
 
