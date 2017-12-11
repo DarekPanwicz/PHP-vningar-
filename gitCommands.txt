@@ -1,0 +1,35 @@
+git clone darek@mmmbitbucket .
+git status
+git branch
+git push
+git commit -m "mmm info"
+git init (Kopiuje z katalogu lokalnego na remote)
+git diff (pokazuje zmiane w pliku)
+git add .
+
+git checkout -b wprowadzenie   (dodaj nowy branch)
+git checkout <NAZWA BRANCHU>(zmiena galezi)
+git branch - jakie sa branchy
+
+---------------
+mkdir - Utworzenie katalogu
+touch nazwaPliku - Utworzenie pliku
+
+.gitignor
+
+-rm (usuwanie plikow)
+
+vim (shift + : , w, q enter)
+
+
+------------
+
+
+
+a2enmod rewrite
+systemctl restart apache2  (status, stop, start, restart takie sa opcje) - komenda wlanczania modulow w php
+
+tail -f     (logi)
+
+ctrl + c (Wyjscie w bashu z wlaczonego programu)
+
