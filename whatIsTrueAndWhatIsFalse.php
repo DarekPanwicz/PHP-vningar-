@@ -31,4 +31,5 @@ if ($counter ==true){
 } else {
 
     var_dump( $counter."Pokazuje zawartosc zmiennej:");
+
 }
