@@ -36,11 +36,20 @@ echo "<hr>";
 print_r($tabelka2);
 echo "<hr>";
 
-$arrTotal = array_intersect($tabelka1, $tabelka2);
+
+    $arrTotal = array_intersect($tabelka1, $tabelka2);
+    $arrTotal2= array_diff($tabelka2, $tabelka1);
+
 
 
 echo "<pre>";
 echo "<hr>";
-
+echo "<h1>Jakie nazwy wystepuja w obu tabelkach</h1>";
 print_r($arrTotal);
+echo "<hr>";
+
+echo "<pre>";
+echo "<hr>";
+echo "<h1>Jakie nazwy <Strong>Nie</Strong> wystepuja w obu tabelkach</h1>";
+print_r($arrTotal2);
 echo "<hr>";
