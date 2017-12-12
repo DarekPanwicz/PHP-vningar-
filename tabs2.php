@@ -42,6 +42,7 @@ echo "<hr>";
 
 
 
+
 echo "<pre>";
 echo "<hr>";
 echo "<h1>Jakie nazwy wystepuja w obu tabelkach</h1>";
@@ -52,4 +53,26 @@ echo "<pre>";
 echo "<hr>";
 echo "<h1>Jakie nazwy <Strong>Nie</Strong> wystepuja w obu tabelkach</h1>";
 print_r($arrTotal2);
+echo "<hr>";
+
+
+echo "<pre>";
+echo "<hr>";
+echo "<h1>Pytanie: Czy w moim koszyku 1 znajduje sie slowo 'pies'</h1>";
+
+
+
+if(in_array("kot",$tabelka1)){
+
+    echo "Tak wystepuje te slowo";
+} else {
+
+    echo "No niestety nie ma tego w tabelce";
+}
+
+
+
+print_r($arrTotal3);
+
+
 echo "<hr>";
