@@ -74,5 +74,14 @@ if(in_array("kot",$tabelka1)){
 
 print_r($arrTotal3);
 
+$arrTotal4= array_search("Szczupak",$tabelka2);
 
 echo "<hr>";
+
+echo "<pre>";
+echo "<hr>";
+
+var_dump($arrTotal4);
+echo "<hr>";
+
+
