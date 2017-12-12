@@ -44,9 +44,9 @@ echo "</pre>";
 
 //zamiana stringa na tabelke
 
-$string =" hmm no nie wiem co dzis sobie zjem na sniadanie";
+$string =" hmm no nie wiem § co dzis sobie zjem na § sniadanie";
 
-$zamiana = explode(" ",$string);
+$zamiana = explode("§",$string);
 echo "<pre>"."print_r";
 print_r($zamiana);
 echo "</pre>";
@@ -61,3 +61,13 @@ echo "<pre>";
 echo "echo".$zamiana;
 echo "</pre>";
 "<hr><br>";
+
+$naString = implode("", $zamiana);
+
+echo "<pre>";
+print_r("Print r: ".$naString);
+echo "</pre>";
+"<hr><br>";
+
+
+
