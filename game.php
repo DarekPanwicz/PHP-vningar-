@@ -38,12 +38,19 @@ $tabelka = array(
         "vendor" => "Delonga",
         "cat" => "AGD/RTV",
         "price" => 3475
-    ),
-
-
-
-
-
-
-
+    )
 );
+
+$licznik = count($tabelka);
+
+
+
+echo "UWAGA! UWAGA! <br>"."W dzisiejszym losiowaniu padla glowna nagroda XXX o wartosci XXX PLN <br>
+sponsorowana przez XXX ! <br> Wszystkim serdecznie gratulujemy";
+
+
+echo "<pre> <h1>";
+
+print_r($licznik);
+
+echo " </h1> </pre> ";
