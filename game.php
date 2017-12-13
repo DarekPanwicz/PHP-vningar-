@@ -6,26 +6,44 @@
  * Time: 18:32
  */
 
-$tabelka1 = array(
+$tabelka = array(
 
-    "Zwierzatko" => "Piesola",
-    "Zwierzatko2"=> "tygrysa",
-    "Zwierzatko3"=> "Malpe",
-    "wygrana" =>"Samochod",
-    "Wygrana1" => "Dom",
-    "Wygrana2" => "Rower",
+    array(
+        "name"=>"Telewizor",
+        "desc" => "Opis telewizora..",
+        "vendor" => "Philips",
+        "cat" => "AGD/RTV",
+        "price" => 675.45
+    ),
+
+    array(
+        "name"=>"Konsola",
+        "desc" => "Opis konsoli..",
+        "vendor" => "Microsoft",
+        "cat" => "AGD/RTV",
+        "price" => 1742.4
+    ),
+
+    array(
+        "name"=>"Meble",
+        "desc" => "Opis mebli..",
+        "vendor" => "Red § White",
+        "cat" => "Dom",
+        "price" => 4563
+    ),
+
+    array(
+        "name"=>"Ekspress do kawy",
+        "desc" => "Opis ekspresu..",
+        "vendor" => "Delonga",
+        "cat" => "AGD/RTV",
+        "price" => 3475
+    ),
+
+
+
+
+
+
 
 );
-
-
-
-
-$losowanie = count($tabelka1);
-$maxIlosc= $losowanie -1;
-
-//Nie dokonczony kod trzeba jeszcze zmienic tablice i dodac ceny do kazdego losowania
-echo "<pre">;
-
-print_r( "Uwaga <br> W dzisiejszym lodowaniu padla glowna nagroda".$tabelka1[1]."O wartosci".)
-
-echo "</pre">;
