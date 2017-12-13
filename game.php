@@ -41,16 +41,22 @@ $tabelka = array(
     )
 );
 
-$licznik = count($tabelka);
+$licznikTab = count($tabelka);
+$losowanieTotal = $losowanie --;
+
+$losowanie = rand(0,$licznikTab);
 
 
 
-echo "UWAGA! UWAGA! <br>"."W dzisiejszym losiowaniu padla glowna nagroda XXX o wartosci XXX PLN <br>
-sponsorowana przez XXX ! <br> Wszystkim serdecznie gratulujemy";
+
+echo "UWAGA! UWAGA! <br>"."W dzisiejszym losiowaniu padla glowna nagroda ".$tabelka[$losowanie]["name"]." o wartosci ".$tabelka[$losowanie][price]." PLN <br>
+sponsorowana przez ".$tabelka[$losowanie]["vendor"]." ! <br> Wszystkim serdecznie gratulujemy";
 
 
 echo "<pre> <h1>";
 
-print_r($licznik);
+echo "Dlugosc tabelki: ".$licznikTab."<br>";
+echo "Wylosowana liczba z tabelki: ".$losowanie;
+
 
 echo " </h1> </pre> ";
