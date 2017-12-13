@@ -10,7 +10,8 @@
 
 
 // Tablica jednowymiarowa
-$MyBasket1 = Array("Telewizor", "Książka kucharska", "Słuchawki", "Stół kuchenny", "Kawa inka");
+$MyBasket1 = Array("Telewizor", "Książka kucharska","Batman", "Słuchawki", "Stół kuchenny", "Kawa inka","Aneks");
+
 
 
 echo "<pre>Tablica \$MyBasket1:\n";
@@ -21,12 +22,20 @@ echo "</pre><hr />";
 echo "<pre>Tablica \$MyBasket1 posortowana [ A-Z ]:\n";
 asort($MyBasket1);
 print_r($MyBasket1);
+
+
 echo "</pre>";
 
 echo "<pre>Tablica \$MyBasket1 posortowana [ Z-A ]:\n";
+
+
+
 arsort($MyBasket1);
 print_r($MyBasket1);
+
+
+
 echo "</pre>";
 
 
-?>
+
