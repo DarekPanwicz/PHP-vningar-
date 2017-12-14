@@ -1,4 +1,6 @@
 <?php
+
+
 /**
  * Created by PhpStorm.
  * User: dajmos
@@ -17,7 +19,10 @@
  * 3. Uruchom skrypt w konsoli: php -f letters.php
  */
 
+
+
 declare(strict_types=1);
+
 
 $stringToTest = 'Darek';
 //$stringToTest = 'rabbit';
@@ -157,13 +162,14 @@ function textLowerCase(string $small): string
 
 }
 
-//Funkcja dotsInjection - Nie mam mojecia jak to zrobic :D
+//Funkcja dotsInjection
+//Normalnie 2 h to pisalem :D
 
 function dotsInjection(string $injection): string {
 
     echo "Before ", dotsInjection, ": ",$injection, PHP_EOL;
 
-    $arr1 =str_split($injection); //Normalnie 2 h to pisalem :D
+    $arr1 =str_split($injection);
 
 
     $suma="";
@@ -173,7 +179,6 @@ function dotsInjection(string $injection): string {
         $suma .= ($arr1[$i].".") ;
 
     }
-
 
 
     echo "After ", __FUNCTION__, ": ", $suma, PHP_EOL;
