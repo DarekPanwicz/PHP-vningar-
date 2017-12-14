@@ -165,20 +165,18 @@ function dotsInjection(string $injection): string {
 
     $arr1 =str_split($injection); //Normalnie 2 h to pisalem :D
 
+
+    $suma="";
+
     For($i=0; $i<sizeof($arr1); $i++){
 
-        $suma = ($arr1[$i].".");
-
-
+        $suma .= ($arr1[$i].".") ;
 
     }
 
+
+
     echo "After ", __FUNCTION__, ": ", $suma, PHP_EOL;
-
-
-
-
-
 
 
     return $injection;
