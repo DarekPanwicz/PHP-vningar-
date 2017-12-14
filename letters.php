@@ -163,10 +163,24 @@ function dotsInjection(string $injection): string {
 
     echo "Before ", dotsInjection, ": ",$injection, PHP_EOL;
 
-    $injection = ( explode( ' , ', $injection ) );
-    echo "After ", __FUNCTION__, ": ", $injection, PHP_EOL;
+    $arr1 =str_split($injection); //Normalnie 2 h to pisalem :D
 
-var_dump($injection);
+    For($i=0; $i<sizeof($arr1); $i++){
+
+        $suma = ($arr1[$i].".");
+
+
+
+    }
+
+    echo "After ", __FUNCTION__, ": ", $suma, PHP_EOL;
+
+
+
+
+
+
+
     return $injection;
 
 
