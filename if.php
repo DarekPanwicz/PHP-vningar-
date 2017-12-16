@@ -11,3 +11,10 @@ if($a>2){
     echo 'piec jest wieksze od dwoch';
 
 };
+
+// joda style
+$a = 5
+if(2<$a){
+    echo 'piec jest wieksze od dwoch';
+
+};
