@@ -14,7 +14,6 @@ $big = [
         'key'=> "Value",
     ],
 
-
 ];
 
 var_export($big);
@@ -26,7 +25,7 @@ var_export($big);
 
 //unset - usuniecie
 
-
+echo "<hr>";
 
 
 $cars = [
@@ -45,6 +44,11 @@ $cars = [
         ],
     ],
 ];
+//Szukanie mercedesa w arr cars
+// isset - czy cos istnieje
+var_export(isset($cars['Mercedes']));
+
+
 
 
 
