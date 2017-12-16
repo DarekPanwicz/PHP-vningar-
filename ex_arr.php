@@ -47,10 +47,19 @@ var_export($wartosc);
 $wartosc= $exArr4{0};
 var_export($wartosc);
 
+echo $exArr1;
 
+unset($exArr1['klucz']);
+var_export($exArr1);
 
+unset ($exArr2[0]);
+var_export($exArr2);
 
+unset ($exArr3{'klucz'});
+var_export($exArr3);
 
+unset ($exArr4{0});
+var_export($exArr4);
 
 
 
