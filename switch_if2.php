@@ -11,14 +11,22 @@ $userRole =0;
 //$userRole =2;
 
 if($userRole == 2){
-
     echo "Admin";
-
 }
 
 if($userRole ==2 and $userRole==1){
-
     echo "Moderator";
+} else {
+
+    echo "user";
+}
+
+
+
+if ( $userRole ==1 or $userRole ==2){
+
+    echo "admin";
+
 } else {
 
     echo "user";
