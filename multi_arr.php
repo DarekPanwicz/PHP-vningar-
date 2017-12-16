@@ -6,6 +6,8 @@
  * Time: 10:41
  */
 
+echo "<pre>";
+
 $big = [
     "small"=> [
 
@@ -17,4 +19,16 @@ $big = [
 
 var_export($big);
 
-echo $big['small']['key'];
+echo $big['small']['key']."<br>";
+echo "<hr>";
+unset($big['small']['key']);
+var_export($big);
+
+//unset - usuniecie
+
+
+
+
+
+
+echo "</pre>";
