@@ -58,3 +58,8 @@ $checkWeekday = "Monday";
 
 
     echo "</pre>";
+
+
+// warunek ? prawda, falsz
+echo isset($weekdays['pl'][$checkWeekday]) ? "Tlumaczenie istnieje": "Tlumaczenie nie istnieje ";
+
