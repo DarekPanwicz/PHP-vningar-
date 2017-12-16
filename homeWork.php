@@ -18,10 +18,13 @@
  */
 
 declare(strict_types=1);
+$firstName= "Darek";
+$lastName = " <b>Panwicz</b>";
+$stringToTest = $firstName;
 
-$stringToTest = 'rabbit';
+
 removeLastLetter($stringToTest);
-appendLetters($stringToTest, 's');
+appendLetters($stringToTest, $lastName);
 
 /**
  * Dodanie do tekstu na końcu ciągu znaków.
@@ -33,9 +36,11 @@ appendLetters($stringToTest, 's');
  */
 function appendLetters(string $text, string $letters): string
 {
-    echo "Before ", __FUNCTION__, ": ", $text, PHP_EOL;
+
+    
+    echo "Before ", __FUNCTION__, ": ", $text, PHP_EOL."<br><br>";
     $text .= $letters;
-    echo "After ", __FUNCTION__, ": ", $text, PHP_EOL;
+    echo "After ", __FUNCTION__, ": ", $text, PHP_EOL."<br><br>";
 
     return $text;
 }
@@ -49,9 +54,9 @@ function appendLetters(string $text, string $letters): string
  */
 function removeLastLetter(string $text): string
 {
-    echo "Before ", __FUNCTION__, ": ", $text, PHP_EOL;
+    echo "Before ", __FUNCTION__, ": ", $text, PHP_EOL."<br><br>";
     $text = substr($text, 0, strlen($text) - 1);
-    echo "After ", __FUNCTION__, ": ", $text, PHP_EOL;
+    echo "After ", __FUNCTION__, ": ", $text, PHP_EOL."<br><br>";
 
     return $text;
 }

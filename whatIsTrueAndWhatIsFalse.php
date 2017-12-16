@@ -27,9 +27,9 @@ $counter =0;
 // 0 - false
 if ($counter ==true){
 
-    var_export("Pokazuje zawartosc zmiennej: $counter ") ;
+    var_export("Pokazuje zawartosc zmiennej,: $counter ") ;
 } else {
 
-    var_dump( $counter."Pokazuje zawartosc zmiennej:");
+    var_dump( $counter."Pokazuje zawartosc zmiennej, chyba ale pewny nie jestem :D ");
 
 }
