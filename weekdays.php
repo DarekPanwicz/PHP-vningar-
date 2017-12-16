@@ -6,8 +6,26 @@
  * Time: 10:31
  */
 
-$weekdays = [];
+//
+//$weekdays = [
+//
+//    "Monday" => "Poniedzialek",
+//    "Tuesday" => "Wtorek",
+//    'Wednesday'=> "Sroda",
+//    'Thursday' => "Czwartek",
+//    'Friday' => "Piatek",
+//    'Saturday' =>"Sobota",
+//    'Sunday'=> "Niedziela",
+//
+//];
+
+echo "<pre>";
 $weekdays = [
+];
+
+$weekdays = [
+
+    "pl"=>[
 
     "Monday" => "Poniedzialek",
     "Tuesday" => "Wtorek",
@@ -17,5 +35,26 @@ $weekdays = [
     'Saturday' =>"Sobota",
     'Sunday'=> "Niedziela",
 
+],"sv" =>[
+
+    "Måndag" => "Poniedzialek",
+    "Tisdag" => "Wtorek",
+    'Onsdag'=> "Sroda",
+    'Torsdag' => "Czwartek",
+    'Fredag' => "Piatek",
+    'Saturday' =>"Sobota",
+    'Söndag'=> "Niedziela",
+
+],
+
+
 ];
 
+var_export($weekdays['pl']);
+
+
+
+$checkWeekday = "Monday";
+
+
+    echo "</pre>";
