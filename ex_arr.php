@@ -8,7 +8,7 @@
 
 echo "<pre> <h1>";
 $exArr1 = [
-'klucz'=> 'wartosc',
+    'klucz'=> 'wartosc',
 ];
 
 var_export($exArr1);
