@@ -9,22 +9,17 @@
 echo "<pre> <h1>";
 $exArr1 = [
 'klucz'=> 'wartosc',
-
 ];
 
 var_export($exArr1);
 
 $exArr2 = [
-
     "wartosc",
 ];
-
 var_export($exArr2);
 
 
 
 $exArr3['klucz']= 'wartosc';
-
-var_export($exArr3)
-
+var_export($exArr3);
 echo "</pre></h1>";
