@@ -6,7 +6,17 @@
  * Time: 09:28
  */
 
+declare(stric_type=1);
+
 class Customer
 {
     public $name;
+    $public function getDiscount(): int
+
+{
+
+    return 20;
+}
+
+
 }
