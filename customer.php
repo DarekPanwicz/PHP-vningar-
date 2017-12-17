@@ -9,5 +9,4 @@
 class Customer
 {
     public $name;
-
 }
