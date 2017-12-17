@@ -6,10 +6,16 @@
  * Time: 11:53
  */
 
-function printFamilyName($familyName){
+
+declare(strict_types=1);
+
+function printFamilyName(string $familyName): void
+{
 
     echo "Name: $familyName", PHP_EOL;
 }
 
 printFamilyName("Nowak");
-printFamilyName("Kowalski")
+printFamilyName("Kowalski");
+
+//Laraver
