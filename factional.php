@@ -23,3 +23,4 @@ function factorial(int $n):int
 }
 
 echo factorial(456);
+
