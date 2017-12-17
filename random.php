@@ -13,9 +13,9 @@ for($i=0; $i<10; $i++){
    do {
        $r = rand(1, 1000);
 
-   }   while ($r %2);
+   }   while ($r %2); {
 
-       echo $r;
+        echo $r;
 
 
 
