@@ -62,3 +62,5 @@ $funcActivatedUsers = array_filter(array_filter(array_filter(
 ), $isNotDisabled), $isLessThan30);
 
 var_export($funcActivatedUsers);
+
+//lambda - funkcja przepisana do funkcji zmiennej
