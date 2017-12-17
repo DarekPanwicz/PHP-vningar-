@@ -39,3 +39,5 @@ echo sum(5,3),PHP_EOL;
 echo diff(5,3),PHP_EOL;
 echo mult(4,9),PHP_EOL;
 echo div(5,0),PHP_EOL;
+
+//5! = 4 x 5 (Minus jeden)
