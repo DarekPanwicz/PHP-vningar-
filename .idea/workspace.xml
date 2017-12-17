@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="907bc3d9-9750-4f3a-9cac-d7e36c006983" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/return_fun.php" afterPath="$PROJECT_DIR$/return_fun.php" />
-    </list>
+    <list default="true" id="907bc3d9-9750-4f3a-9cac-d7e36c006983" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,11 +67,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="factional.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="factional.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/factional.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lambda.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lambda.php">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="callback.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/callback.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -100,10 +118,12 @@
         <option value="$PROJECT_DIR$/nowy.php" />
         <option value="$PROJECT_DIR$/fun_array.php" />
         <option value="$PROJECT_DIR$/fun_other.php" />
-        <option value="$PROJECT_DIR$/strict" />
         <option value="$PROJECT_DIR$/own_function.php" />
         <option value="$PROJECT_DIR$/return_fun.php" />
         <option value="$PROJECT_DIR$/factional.php" />
+        <option value="$PROJECT_DIR$/strict" />
+        <option value="$PROJECT_DIR$/lambda.php" />
+        <option value="$PROJECT_DIR$/callback.php" />
       </list>
     </option>
   </component>
@@ -119,10 +139,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="60" />
-    <option name="y" value="21" />
-    <option name="width" value="1533" />
-    <option name="height" value="1080" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="975" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -193,7 +213,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7825000" />
+    <option name="totallyTimeSpent" value="9067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
@@ -261,8 +281,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assign.php" />
-    <entry file="file://$PROJECT_DIR$/left.php" />
     <entry file="file://$PROJECT_DIR$/assigment.php" />
     <entry file="file://$PROJECT_DIR$/challenge.php" />
     <entry file="file://$PROJECT_DIR$/impossible.php" />
@@ -537,6 +555,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/factional.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/strict">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -545,10 +571,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/factional.php">
+    <entry file="file://$PROJECT_DIR$/lambda.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>
