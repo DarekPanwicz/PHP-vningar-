@@ -12,7 +12,31 @@ declare(strict_types=1);
 
 function sum (int $a=0, int $b =0):int
 {
-
     return $a +$b;
 }
+
+
+
+function diff( int $a=0, int $b=0): int
+{
+    return $a - $b;
+}
+
+function div( int $a=0, int $b=0): int
+{
+    return $a / $b;
+}
+
+function mult( int $a=0, int $b=0): int
+{
+    return $a * $b;
+}
+
+
+
+
+
 echo sum(5,3);
+echo diff(5,3);
+echo mult(4,9);
+echo div(5,3);
