@@ -9,6 +9,9 @@
 $countries = ['Russia', 'Italy', 'Egypt', 'Norway'];
 
 //Forma zapisu w postacji stringa
-//unserialize - odwrotnosc
+//unserialize - odwrotnosc serialize
 
 echo serialize($countries);
+
+echo json_encode($countries);
+// koncercja na json .decode
