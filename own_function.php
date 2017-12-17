@@ -7,15 +7,21 @@
  */
 
 
-declare(strict_types=1);
 
-function printFamilyName(string $familyName): void
+// Wyswietlenie z formatowaniem podanego nazwiska
+//@param string $familyName nazwisko
+
+
+declare(strict_types=1);
+//Laraver
+function printFamilyName(string $familyName, int $birthday = 200): void
+
 {
 
-    echo "Name: $familyName", PHP_EOL;
+    echo "Name: $familyName"."born".$birthday, PHP_EOL;
 }
 
-printFamilyName("Nowak");
+
+printFamilyName("Nowak", 1853);
 printFamilyName("Kowalski");
 
-//Laraver
