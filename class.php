@@ -15,11 +15,19 @@ class Imie
         echo "Dzis na imie mam: " . $name . "<br>";
     }
 
+    public function speed()
+    {
+        echo "Yes this works fine";
+
+    }
+
 
 }
 
-$imie1= new Imie("Darek");
+
 $imie2= new Imie("Batman");
 $imie3= new Imie("Kasia");
+
+echo $imie2->speed();
 
 
