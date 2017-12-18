@@ -6,9 +6,20 @@
  * Time: 12:10
  */
 
-class Pies
+//New class name
+class Imie
 {
-
+//New constructor
+    public function __construct($name)
+    {
+        echo "Dzis na imie mam: " . $name . "<br>";
+    }
 
 
 }
+
+$imie1= new Imie("Darek");
+$imie2= new Imie("Batman");
+$imie3= new Imie("Kasia");
+
+
