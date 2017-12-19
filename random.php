@@ -15,7 +15,7 @@ for($i=0; $i<10; $i++){
 
    }   while ($r %2); {
 
-        echo $r;
+        echo $r . "<br>";
 
 
 
