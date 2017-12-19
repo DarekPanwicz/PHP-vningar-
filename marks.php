@@ -28,17 +28,13 @@ $arr1 =[
 
 ];
 
-    foreach ($arr1 as $imie => $przedmiot){
 
 
+        foreach ($arr1 as $tab=>$x){
+            foreach ($x as $value=> $wynik){
 
-
-        foreach ($przedmiot as $ocena){
-
-            echo  "Uczen{$name} z przedmiotu {$przedmiot}otrzymal {$ocena}";
-            
-          
+                echo "Uczen" . $tab . "z przedmiotu {$value} otrzymal ocene {$wynik} <br>"  ;
+            }
         };
 
 // DOkoncz zadanie
-};

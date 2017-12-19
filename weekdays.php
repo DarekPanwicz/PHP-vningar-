@@ -54,6 +54,7 @@ var_export($weekdays['pl']);
 
 $checkWeekday = "Monday";
 
+
 echo "<br>";
 // warunek ? prawda, falsz
 echo isset($weekdays['pl'][$checkWeekday]) ? "Tlumaczenie istnieje": "Tlumaczenie nie istnieje ";

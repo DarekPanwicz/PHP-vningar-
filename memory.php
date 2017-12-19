@@ -9,11 +9,18 @@
 
 //$allocatedMemory = memory_get_usage();
 
-$allocatedMemory = 100;
+$allocatedMemory = memory_get_usage();
+
+echo "<br><pre>";
+
+echo $allocatedMemory;
+echo "<pre>";
+
 $mb= ($allocatedMemory /1024) /1024;
 
 
-if(($allocatedMemory / 1024) <640){
+if($mb < 640)
+{
 
    echo "640 KB wystarczy kazdemu";
 
@@ -22,3 +29,8 @@ if(($allocatedMemory / 1024) <640){
 
   echo "Potrzebujesz".$mb."mb";
 };
+echo "<br><pre>";
+
+
+echo $mb;
+echo "<pre>";
