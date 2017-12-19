@@ -46,7 +46,7 @@ $cars = [
 ];
 //Szukanie mercedesa w arr cars
 // isset - czy cos istnieje
-var_export(isset($cars['Mercedes']));
+var_export(isset($cars['kombi']));
 
 
 

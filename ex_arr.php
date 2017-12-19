@@ -48,7 +48,7 @@ $wartosc= $exArr4{0};
 var_export($wartosc);
 
 echo $exArr1;
-
+echo "<hr>";
 unset($exArr1['klucz']);
 var_export($exArr1);
 

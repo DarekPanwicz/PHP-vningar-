@@ -52,11 +52,7 @@ $weekdays = [
 
 var_export($weekdays['pl']);
 
-
-
 $checkWeekday = "Monday";
-
-
 
 echo "<br>";
 // warunek ? prawda, falsz
