@@ -19,7 +19,7 @@ $months = ['styczen', 'luty', 'marzec', 'kwiecien', 'maj', 'czerwiec', 'lipiec',
 
 foreach ($months as $arr1) {
 
-    echo "Zawartosc Tab: " . $arr1 . "<br>";
+    echo "Zawartosc petli foreach " . $arr1 . "<br>";
 
 }
 echo "<br><hr><br>";
@@ -27,9 +27,24 @@ echo "<br><hr><br>";
 // for loop
 for($i=0; $i<sizeof($months); $i++){
 
-    echo "Zawartosc Tab: " . $months[$i] . "<br>";
+    echo "Zawartosc petli for: " . $months[$i] . "<br>";
 
 }
 
+//reverse nummbers
+$monthsReverse = array_reverse($months);
 
 // while loop
+$size= sizeof($monthsReverse) -1;
+$j = 0;
+
+echo "<br><hr><br>";
+echo $size; //Wyswietlenie zawartosci size
+echo "<br><hr><br>";
+
+while ($j <= $size){
+
+   echo  "Zawartosc petli while: " . $monthsReverse[$size] . "<br>";
+
+    $size--;
+}
