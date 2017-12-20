@@ -14,14 +14,14 @@ for($i=1; $i<=10; $i++){
         continue;
     }
 
-            if($i%2 ){
+    if($i%2 ){
 
-                echo "liczba nieparzysta to: " . "<b>".$i .  "</b><br>";
+        echo "liczba nieparzysta to: " . "<b>".$i .  "</b><br>";
 
-            } else {
+    } else {
 
-                echo "liczba parzysta to: " . "<b>".$i .  "</b><br>";
+        echo "liczba parzysta to: " . "<b>".$i .  "</b><br>";
 
-            }
+    }
 
 }
