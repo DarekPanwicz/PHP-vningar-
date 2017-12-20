@@ -33,7 +33,7 @@ $arr1 =[
         foreach ($arr1 as $tab=>$x){
             foreach ($x as $value=> $wynik){
 
-                echo "Uczen" . $x . "z przedmiotu {$value} otrzymal ocene {$wynik} <br>"  ;
+                echo "Uczen" . $value . "z przedmiotu {$value} otrzymal ocene {$wynik} <br>"  ;  ;
             }
         };
 
