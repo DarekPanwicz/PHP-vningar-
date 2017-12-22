@@ -19,6 +19,6 @@ The capital of Germany is Berlin
 
 foreach ($ceu as $country => $city){
 
-    echo "The capital of <b>XXX </br> is <b>XXX </br> ";
+    echo "The capital of <b>$country</b>  is <b> $city </b> " . "<hr>";
 
 }
