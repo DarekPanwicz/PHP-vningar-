@@ -9,4 +9,7 @@
 $color = array('white', 'green', 'red', 'blue', 'black');
 // Write a script which will display the following string - Go to the editor
 //and the words 'red', 'green' and 'white' will come from $color.
-echo "The memory of that scene for me is like a frame of film forever frozen at that moment: the <b> $color[2] </b> carpet, the green lawn, the white house, the leaden sky. The new president and his first lady. - Richard M. Nixon";
+
+
+//Adding new echo function
+echo "The memory of that scene for me is like a frame of film forever frozen at that moment: the <b> $color[2] </b> carpet, the <b> $color[1] </b> lawn, the <b> $color[0] </b> house, the leaden sky. The new president and his first lady. - Richard M. Nixon";
