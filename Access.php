@@ -11,20 +11,22 @@ class Access
     private $password;
 
 
-    function __construct($userName, $password)
+    function __construct($userName)
 
     {
-        $this->$userName = $userName;
-        $this->$password = $password;
+        $this->userName = $userName;
+        $this->password = "miauuuuuu to jest haslo dude";
 
     }
 
-    public function getPassword ()
+    public function getPassword ($password)
     {
 
-        if($this->$userName == "Darek" && $this->$password == "Batman"){
+        if($password !="mmmiau"){
 
-            echo "Twoje dane sa prawidlowe: ";
+            echo $password, PHP_EOL;
+
+            return $this->password;
     } else {
 
             echo "Twoje dane nie sa prawidlowe dude";
@@ -38,4 +40,4 @@ class Access
 
 $data = new Access("Darek", "Batman");
 
-
+echo  $data->getPassword("s ");
