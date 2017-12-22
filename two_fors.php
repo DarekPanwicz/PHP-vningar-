@@ -10,3 +10,10 @@
 Korzystając z dwóch zagnieżdżonych pętli for napisz tabliczkę mnożenia, która wyświetli mnożenie razy dwa, razy trzy, razy cztery i razy pięć.
 Plik zapisz jako two_fors.php.*/
 
+
+//Adding second loop
+for ($i=1; $i<=9; $i ++){
+
+    echo "2 * {$i} =" . 2* $i . "<br>";
+
+}
