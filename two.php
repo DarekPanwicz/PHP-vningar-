@@ -17,9 +17,9 @@ Korzystając z pętli for napisz tabliczkę mnożenia, która wyświetli wynik:
 2 * 8 = 16
 2 * 9 = 18*/
 
+//Adding new loop
+for ($i=1; $i<=9; $i ++){
 
-for ($i=0; $i<=8; $i ++){
-
-
+    echo "2 * {$i} =" . 2* $i . "<br>";
 
 }
