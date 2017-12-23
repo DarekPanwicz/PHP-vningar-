@@ -19,6 +19,7 @@ asort($ar1);
 
 foreach ($ar1 as $name => $age){
 
+
     echo "Age of ". $name . ' is ' . $age . "<br>";
 
 };
@@ -35,3 +36,28 @@ foreach ($ar2 as $name => $age){
     echo "Age of ". $name . " is " . $age . "<br>";
 
 };
+
+//descending order sorting by Value
+echo "<hr><br>";
+$ar3= array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40");
+
+arsort($ar3);
+
+foreach ( $ar3 as $name => $age){
+
+    echo "Age of ". $name . " is " . $age . "<br>";
+}
+
+echo "<hr><br>";
+
+//descending order sorting by Key*/
+
+$ar4= array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40");
+
+krsort($ar4);
+
+foreach ( $ar4 as $name => $age){
+
+    echo "Age of ". $name . " is " . $age . "<br>";
+}
+
