@@ -32,12 +32,26 @@ echo "Avrage temp is: " . $avgHightTemp;
 echo "<br><hr>";
 
 
-asort($tempArray);
+sort($tempArray);
 
+echo " List of seven lowest temperatures :";
 
 for($i=0; $i<7; $i++){
 
     echo $tempArray[$i];
+
+}
+
+echo "<br><hr>";
+
+
+
+
+echo "List of seven highest temperatures ";
+
+for($i=($tempArrayLength -5); $i<($tempArrayLength); $i++){
+
+    echo $tempArray[$i] . ",";
 
 }
 
