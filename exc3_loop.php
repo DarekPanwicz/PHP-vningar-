@@ -37,3 +37,20 @@ for ($i=0; $i<=$number; $i ++){
 
 
 };
+
+//second loop
+
+for ($i=1; $i>=$number; $i --){
+
+
+    for ($j=1; $j<=$i; $j++) {
+
+        echo "*" ;
+
+
+    }
+
+    echo "<br>";
+
+
+};
