@@ -6,7 +6,7 @@
  * Time: 10:55
  */
 
-4. Create a script to construct the following pattern, using a nested for loop.
+/*4. Create a script to construct the following pattern, using a nested for loop.
 
 *
 * *
@@ -17,4 +17,23 @@
 * * * *
 * * *
 * *
-*
+**/
+
+$number=4;
+
+//First loop
+
+for ($i=0; $i<=$number; $i ++){
+
+
+   for ($j=0; $j<=$i; $j ++) {
+
+       echo "*" ;
+
+
+   }
+
+   echo "<br>";
+
+
+};
