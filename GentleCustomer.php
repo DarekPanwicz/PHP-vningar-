@@ -7,12 +7,13 @@
  */
 declare(strict_types=1);
 
-class GentleCustomer extends Customer {
+class GentleCustomer extends Customer
+{
 
-    public  function askForDiscount():void
+    public function askForDiscount(): void
     {
 
-        echo  "Can I ask for discount :D ?";
+        echo "Can I ask for discount :D ?";
     }
 
 

@@ -18,10 +18,10 @@ class ChaoticCustomer extends Customer
     }
 
 
-    public  function askForDiscount():void
+    public function askForDiscount(): void
     {
 
-        echo $this->name . "Give my FU.. discount!! ";
+        echo $this->name . " Give my FU.. discount!! ";
     }
 
 }

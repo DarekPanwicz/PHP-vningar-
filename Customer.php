@@ -16,7 +16,8 @@ class Customer
     // privatr, public, protected
 
     protected $name;
-    public function getDiscount():int
+
+    public function getDiscount(): int
     {
         return 20;
 
@@ -26,10 +27,10 @@ class Customer
 // getter getName
 
 
-    public function  setName(string $name): void
-{
-     $this ->name = $name;
-}
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
 
 
     public function getName()
@@ -38,13 +39,13 @@ class Customer
     }
 
 
-    public  function askForDiscount():void
+    public function askForDiscount(): void
     {
 
         echo $this->name . "Can I ask for discount ? ";
     }
 
-    public static  function  getClassName(): void
+    public static function getClassName(): void
     {
 
         echo 'Jestem klasa', get_called_class(), PHP_EOL;
@@ -52,9 +53,6 @@ class Customer
 
 
     }
-
-
-
 
 
 }

@@ -12,21 +12,22 @@ class CustomerFactory
 
 {
 
-  const GENTLE = 'gentle';  //zamiana stringa na stala
-  const CHAOTIC = 'chaotic';
+    const GENTLE = 'gentle';  //zamiana stringa na stala
+    const CHAOTIC = 'chaotic';
 
 
-    public static function chooseCustomer(string $customerType):Customer
+    public static function chooseCustomer(string $customerType): Customer //dlaczego tu jest customer?
     {
 
-        if ($customerType=== self::GENTLE) // self slowo kluczowe odwolanie po statycznej wlasciwosci do GENTLE ktore jest wyzej
+        if ($customerType === self::GENTLE) // self slowo kluczowe odwolanie po statycznej wlasciwosci do GENTLE ktore jest wyzej
         {
-
             return new GentleCustomer();
-        } elseif ($customerType=== self::GENTLE){
+
+        } elseif ($customerType === self::CHAOTIC) {
             return new ChaoticCustomer();
-        //
-        } return new Customer();
+            //
+        }
+        return new Customer();
 
     }
 }

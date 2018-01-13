@@ -10,15 +10,15 @@
 require_once 'Customer.php';
 require_once 'ChaoticCustomer.php';
 require_once 'GentleCustomer.php';
-require_once  'CustomerFactory.php';
+require_once 'CustomerFactory.php';
 
-$customer =new Customer();
+$customer = new Customer();
 $customer->setName('Marian');
 echo $customer->getDiscount();
 echo $customer->getName();
 $customer->askForDiscount();
 
-$rudolf =new ChaoticCustomer();
+$rudolf = new ChaoticCustomer();
 $rudolf->setName('Rudolf');
 echo $rudolf->getDiscount();
 echo $rudolf->getName();
