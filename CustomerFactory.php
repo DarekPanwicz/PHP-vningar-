@@ -11,9 +11,14 @@ declare(strict_types=1);
 class CustomerFactory
 {
 
-    public static function chooseCustomer(string $customerType)
+    public static function chooseCustomer(string $customerType):Customer
     {
 
+        if ($customerType=="Gentle"){
+
+            return new GentleCustomer();
+        }
+            return new ChaoticCustomer();
         //
     }
 }

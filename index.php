@@ -10,6 +10,7 @@
 require_once 'Customer.php';
 require_once 'ChaoticCustomer.php';
 require_once 'GentleCustomer.php';
+require_once  'CustomerFactory.php';
 
 $customer =new Customer();
 $customer->setName('Marian');
@@ -33,3 +34,6 @@ var_export($customer);
 GentleCustomer::getClassName();
 Customer::getClassName();
 ChaoticCustomer::getClassName();
+
+$malpa = CustomerFactory::chooseCustomer("Gentle");
+$malpa->askForDiscount();
