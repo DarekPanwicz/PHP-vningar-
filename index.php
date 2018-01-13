@@ -9,17 +9,22 @@
 
 require_once 'Customer.php';
 require_once 'ChaoticCustomer.php';
+require_once 'GentleCustomer.php';
 
 $customer =new Customer();
 $customer->setName('Marian');
 echo $customer->getDiscount();
 echo $customer->getName();
-echo $customer->askForDiscount();
+$customer->askForDiscount();
 
 $rudolf =new ChaoticCustomer();
 $rudolf->setName('Rudolf');
 echo $rudolf->getDiscount();
 echo $rudolf->getName();
-echo $rudolf->askForDiscount();
+$rudolf->askForDiscount();
+
+$gentle = new GentleCustomer();
+$gentle->getDiscount();
+
 
 var_export($customer);

@@ -15,7 +15,7 @@ class Customer
 {
     // privatr, public, protected
 
-    private $name;
+    protected $name;
     public function getDiscount():int
     {
         return 20;
@@ -38,10 +38,10 @@ class Customer
     }
 
 
-    public  function askForDiscount()
+    public  function askForDiscount():void
     {
 
-        return "Can I ask for discount ? ";
+        echo $this->name . "Can I ask for discount ? ";
     }
 
 
