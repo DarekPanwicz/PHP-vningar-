@@ -29,6 +29,7 @@ $gentle->getDiscount();
 
 var_export($customer);
 
+// wywolanie metod statycznych
 GentleCustomer::getClassName();
 Customer::getClassName();
 ChaoticCustomer::getClassName();
