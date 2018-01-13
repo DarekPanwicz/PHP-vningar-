@@ -7,7 +7,7 @@
  */
 
 //declare(strict_type=1);
-}
+
 //$radek = new Customer(); -- zrobienie nowego obiektu
 //$raderk ->setName("Radek")
 
@@ -17,24 +17,31 @@ class Customer
 
     private $name;
     public function getDiscount():int
-{
-    return 20;
+    {
+        return 20;
 
 
-
+    }
 // setter setName
 // getter getName
 
 
     public function  setName(string $name): void
 {
-     $this->name;
+     $this ->name = $name;
 }
 
 
-    public function getName():string
+    public function getName()
     {
         return $this->name;
+    }
+
+
+    public  function askForDiscount()
+    {
+
+        return "Can I ask for discount ? ";
     }
 
 

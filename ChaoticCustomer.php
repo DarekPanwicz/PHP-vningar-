@@ -12,5 +12,16 @@ class ChaoticCustomer extends Customer
 
 {
 
+    public function getDiscount(): int
+    {
+        return 85;
+    }
+
+
+    public  function askForDiscount()
+    {
+
+        return "Give my FU.. discount!! ";
+    }
 
 }
