@@ -28,3 +28,7 @@ $gentle->getDiscount();
 
 
 var_export($customer);
+
+GentleCustomer::getClassName();
+Customer::getClassName();
+ChaoticCustomer::getClassName();
