@@ -37,3 +37,4 @@ ChaoticCustomer::getClassName();
 
 $malpa = CustomerFactory::chooseCustomer("Gentle");
 $malpa->askForDiscount();
+$Anna = CustomerFactory::chooseCustomer(CustomerFactory::GENTLE); // Sprawdz
