@@ -11,11 +11,14 @@
 //$radek = new Customer(); -- zrobienie nowego obiektu
 //$raderk ->setName("Radek")
 
+
+
 class Customer
 {
     // privatr, public, protected
 
     protected $name;
+    public $status = 'basic';
 
     public function getDiscount(): int
     {
