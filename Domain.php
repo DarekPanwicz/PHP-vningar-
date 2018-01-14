@@ -6,7 +6,11 @@
  * Time: 12:50
  */
 
-class Domain
+class Domain extends AbstractProduct
 {
-
+    public function order()
+    {
+        echo "Zamow domene";
+        // TODO: Implement order() method.
+    }
 }

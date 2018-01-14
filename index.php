@@ -12,7 +12,6 @@ require_once 'ChaoticCustomer.php';
 require_once 'GentleCustomer.php';
 require_once 'CustomerFactory.php';
 
-
 $customer = new Customer();
 $customer->setName('Marian');
 echo $customer->getDiscount();
@@ -49,5 +48,4 @@ echo $customerChaotic->age;
 
 $customerX = new Customer(5);
 echo $customerX->age;
-
 
