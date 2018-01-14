@@ -40,4 +40,9 @@ $malpa = CustomerFactory::chooseCustomer("Gentle");
 $malpa->askForDiscount();
 $Anna = CustomerFactory::chooseCustomer(CustomerFactory::GENTLE); // Sprawdz
 
+$konstruktor= new GentleCustomer();
+echo $konstruktor->status;
+
+$wiek = new Customer(3);
+echo $wiek->age;
 

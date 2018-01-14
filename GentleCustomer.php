@@ -10,6 +10,11 @@ declare(strict_types=1);
 class GentleCustomer extends Customer
 {
 
+    public function __construct()
+    {
+        $this->status = 'premium';
+    }
+
     public function askForDiscount(): void
     {
 

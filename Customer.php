@@ -12,19 +12,24 @@
 //$raderk ->setName("Radek")
 
 
-
 class Customer
 {
     // privatr, public, protected
 
     protected $name;
+    //Status danego klienta moze  byc basic lub premium
     public $status = 'basic';
+    //Dodanie zmiennej z wiekiem
+    public $age;
+
+    public function __construct(int $age = 0)
+    {
+        $this->age = $age;
+    }
 
     public function getDiscount(): int
     {
         return 20;
-
-
     }
 // setter setName
 // getter getName
@@ -34,7 +39,6 @@ class Customer
     {
         $this->name = $name;
     }
-
 
     public function getName()
     {
@@ -50,11 +54,8 @@ class Customer
 
     public static function getClassName(): void
     {
-
         echo 'Jestem klasa', get_called_class(), PHP_EOL; // kiedy pisze sie przecinki  kiedy kropki?
         //echo $this->name , PHP_EOL; //Blad nie bedzie dzialac
-
-
     }
 
 
