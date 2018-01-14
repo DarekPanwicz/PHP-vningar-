@@ -12,5 +12,3 @@ interface  CustomerInterface
     public static function askForRenew(int $period);
 }
 
-class GentleCustomer extends Customer implements CustomerInterface
-class CustomerInterface extends Customer implements CustomerInterface

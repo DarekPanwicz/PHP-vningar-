@@ -6,6 +6,7 @@
  * Time: 15:15
  */
 //declare(strict_type=1);
+require_once 'CustomerInterface.php';
 
 require_once 'Customer.php';
 require_once 'ChaoticCustomer.php';

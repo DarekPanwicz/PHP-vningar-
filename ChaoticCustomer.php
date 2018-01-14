@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-class ChaoticCustomer extends Customer
+class ChaoticCustomer extends Customer implements CustomerInterface
 
 {
 
@@ -22,6 +22,12 @@ class ChaoticCustomer extends Customer
     {
 
         echo $this->name . " Give my FU.. discount!! ";
+    }
+
+    public static function askForRenew(int $period){
+
+        // miaaauu
+        echo " miauuu CAT";
     }
 
 }

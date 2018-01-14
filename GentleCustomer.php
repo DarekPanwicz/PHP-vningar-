@@ -7,7 +7,7 @@
  */
 declare(strict_types=1);
 
-class GentleCustomer extends Customer
+class GentleCustomer extends Customer implements CustomerInterface
 {
 
     public function __construct(int $age=0)
@@ -20,6 +20,11 @@ class GentleCustomer extends Customer
     {
 
         echo "Can I ask for discount :D ?";
+    }
+
+    public static function askForRenew(int $period){
+
+        echo "miauu1";
     }
 
 
