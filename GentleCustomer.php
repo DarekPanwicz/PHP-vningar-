@@ -10,7 +10,7 @@ declare(strict_types=1);
 class GentleCustomer extends Customer
 {
 
-    public function __construct()
+    public function __construct(int $age=0)
     {
         $this->status = 'premium';
     }
