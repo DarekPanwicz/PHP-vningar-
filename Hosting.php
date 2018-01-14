@@ -8,9 +8,21 @@
 
 class Hosting extends AbstractProduct
 {
+
+
+
 public function order()
 {
     echo "zamow hosting";
     // TODO: Implement order() method.
 }
+
+    public function changeStatus(string $newStatus)
+    {
+
+    echo "status zmieniony: $newStatus";
+    }
+
+
+
 }

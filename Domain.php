@@ -13,4 +13,16 @@ class Domain extends AbstractProduct
         echo "Zamow domene";
         // TODO: Implement order() method.
     }
+
+    public function changeStatus(string $newStatus)
+    {
+
+        echo "status zmieniony: nie mozna zmienic nazwy domeny";
+
+
+    }
+
+
+
+
 }

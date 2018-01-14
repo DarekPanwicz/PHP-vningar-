@@ -10,5 +10,7 @@ interface  CustomerInterface
 {
 
     public static function askForRenew(int $period);
+
+    public static function askForInvoice(int $invoiceId);
 }
 

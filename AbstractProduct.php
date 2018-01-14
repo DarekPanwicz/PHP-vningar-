@@ -10,7 +10,9 @@
 declare(strict_types=1);
 abstract class AbstractProduct
 {
+
  protected $price;
+ abstract function changeStatus(string $newStatus);
  abstract function order();
  public function setPrice(int $price)
  {

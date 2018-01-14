@@ -27,5 +27,10 @@ class GentleCustomer extends Customer implements CustomerInterface
         echo "miauu1";
     }
 
+    public static function askForInvoice(int $invoiceId)
+    {
+        echo "Poprosze fakture";
+
+    }
 
 }
