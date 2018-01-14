@@ -12,6 +12,7 @@ require_once 'ChaoticCustomer.php';
 require_once 'GentleCustomer.php';
 require_once 'CustomerFactory.php';
 
+
 $customer = new Customer();
 $customer->setName('Marian');
 echo $customer->getDiscount();
@@ -38,3 +39,5 @@ ChaoticCustomer::getClassName();
 $malpa = CustomerFactory::chooseCustomer("Gentle");
 $malpa->askForDiscount();
 $Anna = CustomerFactory::chooseCustomer(CustomerFactory::GENTLE); // Sprawdz
+
+

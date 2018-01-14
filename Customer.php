@@ -48,7 +48,7 @@ class Customer
     public static function getClassName(): void
     {
 
-        echo 'Jestem klasa', get_called_class(), PHP_EOL;
+        echo 'Jestem klasa', get_called_class(), PHP_EOL; // kiedy pisze sie przecinki  kiedy kropki?
         //echo $this->name , PHP_EOL; //Blad nie bedzie dzialac
 
 
