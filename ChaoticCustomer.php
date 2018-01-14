@@ -30,7 +30,7 @@ class ChaoticCustomer extends Customer implements CustomerInterface
         echo " miauuu CAT";
     }
 
-    public static function askForInvoice(int $invoiceId)
+    public function askForInvoice(int $invoiceId)
     {
         echo "Daj fakture!";
 
