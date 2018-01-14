@@ -13,6 +13,7 @@ class GentleCustomer extends Customer
     public function __construct(int $age=0)
     {
         $this->status = 'premium';
+        parent::__construct($age);
     }
 
     public function askForDiscount(): void

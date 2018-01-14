@@ -16,18 +16,24 @@ class CustomerFactory
     const CHAOTIC = 'chaotic';
 
 
-    public static function chooseCustomer(string $customerType): Customer //dlaczego tu jest customer?
+    public static function chooseCustomer(string $customerType, int $yearOfBirth=0): Customer //dlaczego tu jest customer?
     {
+
+
+        //Zapis z sprawdzeniem
+        $age =$yearOfBirth ? date('Y')- $yearOfBirth:0;
+        //Prosty zapis bez sprawdzenia
+       // $age = date('Y') - $yearOfBirth;
 
         if ($customerType === self::GENTLE) // self slowo kluczowe odwolanie po statycznej wlasciwosci do GENTLE ktore jest wyzej
         {
-            return new GentleCustomer();
+            return new GentleCustomer($age);
 
         } elseif ($customerType === self::CHAOTIC) {
-            return new ChaoticCustomer();
+            return new ChaoticCustomer($age);
             //
         }
-        return new Customer();
+        return new Customer($age);
 
     }
 }

@@ -38,8 +38,9 @@ ChaoticCustomer::getClassName();
 
 $malpa = CustomerFactory::chooseCustomer("Gentle");
 $malpa->askForDiscount();
-$Anna = CustomerFactory::chooseCustomer(CustomerFactory::GENTLE); // Sprawdz
-
+$Anna = CustomerFactory::chooseCustomer(CustomerFactory::GENTLE, 1983); // Sprawdz
+echo "To jest Anna ";
+var_export( $Anna);
 $customerGentle= new GentleCustomer(3);
 var_export( $customerGentle);
 
@@ -48,4 +49,5 @@ echo $customerChaotic->age;
 
 $customerX = new Customer(5);
 echo $customerX->age;
+
 
