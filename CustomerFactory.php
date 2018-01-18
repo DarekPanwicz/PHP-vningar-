@@ -16,13 +16,14 @@ class CustomerFactory
     const CHAOTIC = 'chaotic';
 
 
-    public static function chooseCustomer(string $customerType, int $yearOfBirth=0): Customer //dlaczego tu jest customer?
+    public static function chooseCustomer(string $customerType, int $yearOfBirth=0): Customer
     {
 
 
         //Zapis z sprawdzeniem
-        $age =$yearOfBirth ? date('Y')- $yearOfBirth:0;
-        //Prosty zapis bez sprawdzenia
+        $age =$yearOfBirth ? date('Y')- $yearOfBirth:0;  //Co oznacza "?"
+
+        //Prosty zapis bez sprawdzenia to :
        // $age = date('Y') - $yearOfBirth;
 
         if ($customerType === self::GENTLE) // self slowo kluczowe odwolanie po statycznej wlasciwosci do GENTLE ktore jest wyzej

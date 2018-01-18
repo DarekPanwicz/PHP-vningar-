@@ -16,20 +16,25 @@ class GentleCustomer extends Customer implements CustomerInterface
         parent::__construct($age);
     }
 
-    public function askForDiscount(): void
+    public function askForDiscount(): string
     {
 
-        echo "Can I ask for discount :D ?";
+        return "Can I ask for discount :D ?";
     }
 
-    public static function askForRenew(int $period){
+    public function askForRenew(int $period){
 
         echo "miauu1";
     }
 
-    public function askForInvoice(int $invoiceId)
+    public function askForInvoice(int $invoiceId): Invoice
     {
-        echo "Poprosze fakture";
+
+        $invoice= new invoice();
+        $invoice->number=$invoiceId;
+        $invoice->date= new DateTime('now');
+        $invoice->setCustomer($this);
+        return $invoice;
 
     }
 

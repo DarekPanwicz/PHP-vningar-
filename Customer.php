@@ -8,8 +8,8 @@
 
 //declare(strict_type=1);
 
-//$radek = new Customer(); -- zrobienie nowego obiektu
-//$raderk ->setName("Radek")
+//$pies = new Customer(); -- zrobienie nowego obiektu
+//$pies ->setName("Miauczek")
 
 
 class Customer
@@ -17,6 +17,8 @@ class Customer
     // privatr, public, protected
 
     protected $name;
+    public $lastName;
+    public $nip;
     //Status danego klienta moze  byc basic lub premium
     public $status = 'basic';
     //Dodanie zmiennej z wiekiem
@@ -46,10 +48,22 @@ class Customer
     }
 
 
-    public function askForDiscount(): void
+    public function askForDiscount(): string
+{
+
+    return $this->name . "Can I ask for discount ? ";
+
+}
+
+    public function askForInvoice(int $invoiceId): Invoice
     {
 
-        echo $this->name . "Can I ask for discount ? ";
+       $invoice= new invoice();
+       $invoice->number=$invoiceId;
+       $invoice->date= new DateTime('now');
+       $invoice->setCustomer($this);
+       return $invoice;
+
     }
 
     public static function getClassName(): void

@@ -9,8 +9,10 @@ declare(strict_types=1);
 interface  CustomerInterface
 {
 
-    public static function askForRenew(int $period);
+    public function askForRenew(int $period);
 
     public function askForInvoice(int $invoiceId);
+
+
 }
 

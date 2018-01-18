@@ -18,21 +18,27 @@ class ChaoticCustomer extends Customer implements CustomerInterface
     }
 
 
-    public function askForDiscount(): void
+    public function askForDiscount(): string
     {
 
-        echo $this->name . " Give my FU.. discount!! ";
+        return $this->name . " Give my FU.. discount!! ";
     }
 
-    public static function askForRenew(int $period){
+    public function askForRenew(int $period){
 
         // miaaauu
-        echo " miauuu CAT";
+
     }
 
-    public function askForInvoice(int $invoiceId)
+
+    public function askForInvoice(int $invoiceId): Invoice
     {
-        echo "Daj fakture!";
+
+        $invoice= new invoice();
+        $invoice->number=$invoiceId;
+        $invoice->date= new DateTime('now');
+        $invoice->setCustomer($this);
+        return $invoice;
 
     }
 
