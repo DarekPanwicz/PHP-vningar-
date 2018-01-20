@@ -1,64 +1,25 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Darek
- * Date: 2017-12-17
- * Time: 15:15
+ * User: Darek P
+ * Date: 2018-01-20
+ * Time: 12:59
  */
-//declare(strict_type=1);
-require_once 'CustomerInterface.php';
-require_once 'Invoice.php';
-require_once 'Customer.php';
-require_once 'ChaoticCustomer.php';
-require_once 'GentleCustomer.php';
-require_once 'CustomerFactory.php';
+declare(strict_types=1);
 
-//New customer Marian
-$customer = new Customer();
-$customer->setName('Marian');
-echo $customer->getDiscount();
-echo $customer->getName();
-echo $customer->askForDiscount();
+require_once "Rectangle.php";
+require_once "Square.php";
 
-//New Chaotic Customer Rudolf
-$rudolf = new ChaoticCustomer();
-$rudolf->setName('Rudolf');
-echo $rudolf->getDiscount();
-echo $rudolf->getName();
-echo $rudolf->askForDiscount();
+//Adding new object rectangle
+echo "Rectangle Area".PHP_EOL;
+$rectange= new Rectangle();
+$rectange->setHeight(20);
+$rectange->setWidth(10);
+echo $rectange->calcArea().PHP_EOL;
 
-//New gentle Customer
-$gentle = new GentleCustomer();
-echo $gentle->getDiscount();
-var_export($customer);
-
-// Adding statistic methods
-GentleCustomer::getClassName();
-Customer::getClassName();
-ChaoticCustomer::getClassName();
-
-$malpa = CustomerFactory::chooseCustomer("Gentle");
-$malpa->askForDiscount();
-$Anna = CustomerFactory::chooseCustomer(CustomerFactory::GENTLE, 1933);
-echo "To jest Anna ";
-var_export( $Anna);
-
-//New object gentleCustomer
-$customerGentle= new GentleCustomer(3);
-var_export( $customerGentle);
-//New object Chaotic Customer
-$customerChaotic = new Customer(4);
-echo $customerChaotic->age;
-
-//New object, new customerX
-$customerX = new Customer(5);
-echo $customerX->age;
-$customer->setName('Robert');
-
-//New object invoice with name Marian ? This must be wrong Dude !
-//$invoice = $marian->askForInvoice(88);
-//var_export($invoice);
-
-$invoice = $customer->askForInvoice(1);
-var_export($invoice);
+$square = new Square();
+echo "Square Area".PHP_EOL;
+$square->setHeight(5);
+$square->setWidth(4);
+echo $square->calcArea().PHP_EOL;
 
