@@ -6,7 +6,8 @@
  * Time: 15:45
  */
 
-class ContactLens extends Glasses
+
+class ContactLens extends Glasses implements  ContactsInterface
 {
 
 

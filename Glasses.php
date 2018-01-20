@@ -6,7 +6,7 @@
  * Time: 15:46
  */
 
-class Glasses
+class Glasses implements ContactsInterface
 {
     //This function have only Glasses
      public function chooseFrame();
