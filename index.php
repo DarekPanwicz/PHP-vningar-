@@ -53,8 +53,12 @@ echo $customerChaotic->age;
 //New object, new customerX
 $customerX = new Customer(5);
 echo $customerX->age;
+$customer->setName('Robert');
 
 //New object invoice with name Marian ? This must be wrong Dude !
 //$invoice = $marian->askForInvoice(88);
 //var_export($invoice);
+
+$invoice = $customer->askForInvoice(1);
+var_export($invoice);
 

@@ -10,6 +10,8 @@
 class Invoice
 
 {
+
+
     //invoice number - string
     public $invoiceNr;
     //customer number string
@@ -24,8 +26,9 @@ class Invoice
     }
 
     // Adding new customer function
-    public function customer(){
+    public function customer($customer){
 
+        $this->customer= $customer;
 
     }
 

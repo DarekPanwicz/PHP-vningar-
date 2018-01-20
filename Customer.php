@@ -58,10 +58,10 @@ class Customer
     public function askForInvoice(int $invoiceId): Invoice
     {
 
-       $invoice= new invoice();
-       $invoice->number=$invoiceId;
+       $invoice= new Invoice();
+       $invoice->invoiceNr=$invoiceId;
        $invoice->date= new DateTime('now');
-       $invoice->setCustomer($this);
+       $invoice->Customer($this);
        return $invoice;
 
     }
