@@ -8,21 +8,22 @@
 
 declare(strict_types=1);
 
-class Square extends Rectangle
+class Square
 {
+    public $lenght;
 
-
-
-   public function setHeight(int $height): void
+   public function setLenght(int $lenght): void
    {
-       $this->height= $height;
-       $this->width= $height;
+       $this->lenght= $lenght;
+
    }
 
-   public function setWidth(int $width): void
-   {
-      $this->width= $width;
-      $this->height=$width;
-   }
+    public function getLenght(int $lenght): void
+    {
+       return $this->lenght= $lenght;
+
+    }
+
+
 
 }
