@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-class Square
+class Square implements AreaCalculableInterface
 {
     public $lenght;
 
@@ -18,12 +18,15 @@ class Square
 
    }
 
-    public function getLenght(int $lenght): void
+    public function getLenght(): int
     {
-       return $this->lenght= $lenght;
+       return $this->lenght;
 
     }
-
+    public function calcArea():int
+    {
+        return $this->lenght*$this->lenght;
+    }
 
 
 }

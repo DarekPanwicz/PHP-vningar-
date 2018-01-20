@@ -7,8 +7,10 @@
  */
 declare(strict_types=1);
 
+require_once "AreaCalculableInterface.php";
 require_once "Rectangle.php";
 require_once "Square.php";
+
 
 //Adding new object rectangle
 echo "Rectangle Area".PHP_EOL;
@@ -19,17 +21,18 @@ echo $rectangle->calcArea().PHP_EOL;
 
 $square = new Square();
 echo "Square Area".PHP_EOL;
-$square->setHeight(5);
-$square->setWidth(4);
+$square->setLenght(5);
+
 echo $square->calcArea().PHP_EOL;
 
-function getArea(Rectangle $rectangle):int
+/*function getArea(Rectangle $rectangle):int
 {
     $rectangle->setHeight(2);
     $rectangle->setWidth(4);
     return $rectangle->calcArea();
-}
+}*/
 
-echo getArea($rectangle);
-echo getArea($square);
+
+
+
 

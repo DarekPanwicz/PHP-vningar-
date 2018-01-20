@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-class Rectangle
+class Rectangle implements AreaCalculableInterface
 {
 
     protected $height;
