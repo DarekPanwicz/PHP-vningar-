@@ -1,0 +1,14 @@
+{
+    "name": "dajmos007/first",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Darek P",
+            "email": "dajmos007@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4": {"Dajmos007\\":"src/Dajmos007"}
+    }
+}
