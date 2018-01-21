@@ -6,35 +6,8 @@
  * Time: 15:46
  */
 
-class Glasses implements ContactsInterface
+class Glasses extends AbstractGlasses implements ContactsInterface
 {
-
-    public $power;
-    public $name;
-
-    //This function have only Glasses
-
-    public function setName(string $name)
-    {
-        $this->name=$name;
-    }
-
-    public function getName(){
-        return $this->name;
-    }
-
-    public function setPower(int $power){
-
-        $this->power=$power;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPower()
-    {
-        return $this->power;
-    }
 
 
 
