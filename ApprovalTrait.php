@@ -8,5 +8,15 @@
 
 trait ApprovalTrait
 {
+    protected $Approved;
+    protected $NotApproved;
 
+    /**
+     * @param mixed $Approved
+     */
+    public function getApproved($Approved, $NotApproved)
+    {
+        $this->Approved = $Approved;
+        $this->NotApproved=$NotApproved;
+    }
 }
