@@ -8,5 +8,5 @@
 
 class KeyCars extends AbstractCar
 {
-
+    use PowerTreit;
 }

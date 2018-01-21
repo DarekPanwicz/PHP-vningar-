@@ -8,5 +8,5 @@
 
 class ButtonCar extends AbstractCar
 {
-
+    use PowerTreit;
 }

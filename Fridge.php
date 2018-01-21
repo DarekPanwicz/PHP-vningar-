@@ -8,5 +8,5 @@
 
 class Fridge extends AbstractAgdDevices
 {
-
+    use PowerTreit;
 }

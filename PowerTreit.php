@@ -6,7 +6,7 @@
  * Time: 11:55
  */
 
-trait PowerTreid{
+trait PowerTreit{
 
 protected $powerOn;
 protected $powerOff;

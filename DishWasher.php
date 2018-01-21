@@ -8,5 +8,5 @@
 
 class dishwasher extends AbstractAgdDevices
 {
-use PowerTried;
+use PowerTreit;
 }

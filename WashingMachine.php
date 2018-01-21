@@ -8,5 +8,5 @@
 
 class WashingMachine extends AbstractAgdDevices
 {
-
+    use PowerTreit;
 }
