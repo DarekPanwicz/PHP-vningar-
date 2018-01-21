@@ -9,5 +9,7 @@
 class Glasses implements ContactsInterface
 {
     //This function have only Glasses
-     public function chooseFrame();
+     public function chooseFrame(){
+
+     }
 }
