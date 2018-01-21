@@ -8,6 +8,10 @@
 
 class Glasses implements ContactsInterface
 {
+
+    public $power;
+    public $name;
+
     //This function have only Glasses
      public function chooseFrame(){
 
