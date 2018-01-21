@@ -5,7 +5,7 @@
  * Date: 2018-01-21
  * Time: 12:07
  */
-
+namespace dajmos;
 class ButtonCar extends AbstractCar
 {
     use PowerTreit;

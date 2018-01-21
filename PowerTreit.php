@@ -5,6 +5,7 @@
  * Date: 2018-01-21
  * Time: 11:55
  */
+namespace dajmos;
 
 trait PowerTreit{
 

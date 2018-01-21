@@ -6,6 +6,8 @@
  * Time: 11:49
  */
 
+namespace dajmos;
+
 class Fridge extends AbstractAgdDevices
 {
     use PowerTreit;

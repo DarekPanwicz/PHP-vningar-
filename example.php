@@ -17,13 +17,13 @@ require_once 'Fridge.php';
 require_once 'WashingMachine.php';
 
 
-$buttonCarSetPower= new ButtonCar();
+$buttonCarSetPower= new dajmos\ButtonCar();
 $buttonCarSetPower->powerOn();
 
 echo "Status samochodu: ";
 var_export($buttonCarSetPower).PHP_EOL;
 
-$dishwasher = new DishWasher();
+$dishwasher = new dajmos\DishWasher();
 $dishwasher->powerOff();
 echo "Status: Zmywarki: ";
 var_export($dishwasher).PHP_EOL;

@@ -5,6 +5,7 @@
  * Date: 2018-01-21
  * Time: 12:06
  */
+namespace dajmos;
 
 class KeyCars extends AbstractCar
 {
