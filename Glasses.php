@@ -13,7 +13,33 @@ class Glasses implements ContactsInterface
     public $name;
 
     //This function have only Glasses
-     public function chooseFrame(){
+
+    public function setName(string $name)
+    {
+        $this->name=$name;
+    }
+
+    public function getName(){
+        return $this->name;
+    }
+
+    public function setPower(int $power){
+
+        $this->power=$power;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPower()
+    {
+        return $this->power;
+    }
+
+
+
+     public function chooseFrame()
+     {
 
      }
 }
