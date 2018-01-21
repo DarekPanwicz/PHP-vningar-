@@ -7,7 +7,7 @@
  */
 declare(strict_types=1);
 namespace Dajmos007;
+
 class AbstractAgdDevices
 {
-
 }

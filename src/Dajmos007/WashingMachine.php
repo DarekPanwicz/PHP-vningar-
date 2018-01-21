@@ -6,6 +6,7 @@
  * Time: 11:49
  */
 namespace Dajmos007;
+
 class WashingMachine extends AbstractAgdDevices
 {
     use PowerTreit;

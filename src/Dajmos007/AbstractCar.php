@@ -6,7 +6,7 @@
  * Time: 12:08
  */
 namespace Dajmos007;
+
 class AbstractCar
 {
-
 }
