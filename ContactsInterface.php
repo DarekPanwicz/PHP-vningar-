@@ -10,3 +10,4 @@ interface ContactsInterface
 {
     public function chooseFrame();
 }
+

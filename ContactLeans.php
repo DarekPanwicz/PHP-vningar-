@@ -7,9 +7,8 @@
  */
 
 
-class ContactLens extends Glasses implements  ContactsInterface
+class ContactLeans extends Glasses
 {
-
 
 
 
