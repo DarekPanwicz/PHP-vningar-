@@ -16,7 +16,8 @@ require_once 'Video.php';
 
 
 $photo = new Photo();
-$photo->Approve(1).PHP_EOL;
-
+$photo->approve(1).PHP_EOL;
+var_export($photo);
 $comment = new Comment();
-$comment->Approve(3).PHP_EOL;
+$comment->approve(3).PHP_EOL;
+var_export($photo);

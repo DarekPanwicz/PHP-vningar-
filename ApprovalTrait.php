@@ -15,7 +15,7 @@ trait ApprovalTrait
     public function approve($approve)
     {
         //Set status
-       $this->approve = $approve;
+       return $this->approve = $approve;
 
     }
 }
