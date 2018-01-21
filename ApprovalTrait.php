@@ -8,13 +8,14 @@
 
 trait ApprovalTrait
 {
-    protected $Approved;
-    protected $NotApproved;
+    protected $approve;
 
 
-    public function Approved()
+
+    public function approve($approve)
     {
-        $this->Approved = $Approved;
-        $this->NotApproved=$NotApproved;
+        //Set status
+       $this->approve = $approve;
+
     }
 }

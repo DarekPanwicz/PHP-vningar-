@@ -15,8 +15,8 @@ require_once 'Photo.php';
 require_once 'Video.php';
 
 
-$trait = new Photo();
-$trait->Approved();
+$photo = new Photo();
+$photo->Approve(1).PHP_EOL;
 
-$trait = new Comment();
-$trait->Approved();
+$comment = new Comment();
+$comment->Approve(3).PHP_EOL;
