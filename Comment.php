@@ -8,5 +8,7 @@
 
 class Comment
 {
+    use ApprovalTrait;
+
 
 }
