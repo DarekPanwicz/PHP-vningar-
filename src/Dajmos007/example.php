@@ -14,7 +14,7 @@ require_once 'ButtonCar.php';
 require_once 'AbstractAgdDevices.php';
 require_once 'DishWasher.php';
 require_once 'Fridge.php';
-require_once 'WashingMachine.php'
+require_once 'WashingMachine.php';
 
 
 

@@ -13,7 +13,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 // create a log channel
 $log = new Logger('name');
-$log->pushHandler(new StreamHandler('logix.log', Logger::WARNING));
+$log->pushHandler(new StreamHandler('/logix.log', Logger::WARNING));
 
 // add records to the log
 $log->warning('Foo');

@@ -6,6 +6,7 @@
  * Time: 11:55
  */
 namespace Dajmos007;
+
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
