@@ -30,7 +30,7 @@ trait PowerTrait
     // Create the logger
 $logger = new Logger('my_logger');
 // Now add some handlers
-$logger->pushHandler(new StreamHandler(__DIR__.'/loggerB.log', Logger::DEBUG));
+$logger->pushHandler(new StreamHandler('loggerB.log', Logger::DEBUG));
 $logger->pushHandler(new FirePHPHandler());
 
 // You can now use your logger

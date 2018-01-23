@@ -7,5 +7,5 @@
  */
 require __DIR__ . '/vendor/autoload.php';
 
-$logg= new \Dajmos007\PowerTrait;
-echo $logg->logger();
+$logg= new \Dajmos007\Fridge();
+$logg->logger();
