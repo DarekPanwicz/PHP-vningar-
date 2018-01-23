@@ -21,7 +21,7 @@ class CustomerFactory
 
 
         //Zapis z sprawdzeniem
-        $age =$yearOfBirth ? date('Y')- $yearOfBirth:0;  //Co oznacza "?"
+        $age =$yearOfBirth ? date('Y')- $yearOfBirth:0;
 
         //Prosty zapis bez sprawdzenia to :
        // $age = date('Y') - $yearOfBirth;
