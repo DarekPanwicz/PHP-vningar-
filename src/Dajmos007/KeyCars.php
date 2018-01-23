@@ -9,5 +9,5 @@ namespace Dajmos007;
 
 class KeyCars extends AbstractCar
 {
-    use PowerTreit;
+    use PowerTrait;
 }
