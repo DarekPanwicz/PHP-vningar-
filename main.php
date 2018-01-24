@@ -6,13 +6,13 @@
  * Time: 11:28
  */
 
-use Dajmos007;
+
 
 require __DIR__ . '/vendor/autoload.php';
 
-$darek = new \Dajmos007\Doberman;
+$darek = new Dajmos007\Doberman;
 $darek->setName("Darek");
-echo $darek->getName();
+$darek->getName();
 
 
 
