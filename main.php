@@ -10,10 +10,12 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-
-$darek = new Dajmos007\Doberman();
+//New object in class doberman
+$darek = new \Dajmos007\Doberman();
 $darek->setName("Darek");
 $darek->getName();
+
+
 
 
 

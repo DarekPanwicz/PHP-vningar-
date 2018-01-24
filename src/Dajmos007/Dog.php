@@ -6,9 +6,9 @@
  * Time: 11:35
  */
 namespace Dajmos007;
+
 class Dog
 {
-
 protected $color= "Czerwony";
 protected $name;
 

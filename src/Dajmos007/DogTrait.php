@@ -11,5 +11,5 @@ namespace Dajmos007;
 
 trait DogTrait
 {
- public $malpka;
+ //function is cooming :D
 }
