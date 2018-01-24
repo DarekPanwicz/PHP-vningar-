@@ -7,8 +7,7 @@
  */
 namespace Dajmos007;
 
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
+
 
 trait PowerTreit
 {
