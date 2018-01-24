@@ -6,7 +6,7 @@
  * Time: 11:42
  */
 
-class Labrador extends Dog
+class Labrador extends Dog implements DogTrade
 {
 
 }
