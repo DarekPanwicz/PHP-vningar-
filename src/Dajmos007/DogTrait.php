@@ -6,7 +6,7 @@
  * Time: 11:45
  */
 
-class DogTrade
+trait DogTrait
 {
 
 }

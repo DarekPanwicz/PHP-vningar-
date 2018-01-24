@@ -6,7 +6,9 @@
  * Time: 11:42
  */
 
-class Doberman extends Dog implements DogTrade
+use DogTrait;
+
+class Labrador extends Dog
 {
 
 }
