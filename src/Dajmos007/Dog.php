@@ -5,7 +5,7 @@
  * Date: 2018-01-24
  * Time: 11:35
  */
-namespace dajmos007;
+namespace Dajmos007;
 class Dog
 {
 

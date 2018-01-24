@@ -9,7 +9,7 @@
 declare(strict_types=1);
 
 use DogTrait;
-namespace dajmos007;
+namespace Dajmos007;
 
 class Doberman extends Dog
 {

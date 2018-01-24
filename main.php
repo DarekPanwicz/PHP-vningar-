@@ -6,9 +6,11 @@
  * Time: 11:28
  */
 
-require_once "Dog.php";
-require_once "Doberman.php";
-require_once "Labrador";
+use Dajmos007;
+
+require_once "src/Dajmos007/Dog.php";
+require_once "src/Dajmos007/Doberman.php";
+require_once "src/Dajmos007/Labrador";
 
 $darek = new \dajmos007\Doberman;
 $darek->setName("Darek");
