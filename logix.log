@@ -2,6 +2,7 @@
 [2018-01-23 14:23:08] name.ERROR: Bar [] []
 [2018-01-23 14:23:39] name.WARNING: Foo [] []
 [2018-01-23 14:23:39] name.ERROR: Bar [] []
+<<<<<<< HEAD
 [2018-01-23 14:03:43] name.WARNING: Foo [] []
 [2018-01-23 14:03:43] name.ERROR: Bar [] []
 [2018-01-23 14:04:59] name.WARNING: Foo [] []
@@ -12,3 +13,7 @@
 [2018-01-23 14:07:24] name.ERROR: Bar [] []
 [2018-01-23 14:07:26] name.WARNING: Foo [] []
 [2018-01-23 14:07:26] name.ERROR: Bar [] []
+=======
+[2018-01-23 15:08:06] name.WARNING: Foo [] []
+[2018-01-23 15:08:06] name.ERROR: Bar [] []
+>>>>>>> 5f11b894fcba4971730a0846e8b4ecd27936f3d8

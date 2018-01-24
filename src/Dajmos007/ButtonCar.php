@@ -9,7 +9,7 @@ namespace Dajmos007;
 
 class ButtonCar extends AbstractCar
 {
-    use PowerTreit;
+    use PowerTrait;
 
 
 }

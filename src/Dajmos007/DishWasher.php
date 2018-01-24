@@ -9,5 +9,5 @@ namespace Dajmos007;
 
 class dishwasher extends AbstractAgdDevices
 {
-    use PowerTreit;
+    use PowerTrait;
 }

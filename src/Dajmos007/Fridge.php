@@ -10,5 +10,5 @@ namespace Dajmos007;
 
 class Fridge extends AbstractAgdDevices
 {
-    use PowerTreit;
+    use PowerTrait;
 }

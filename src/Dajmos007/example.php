@@ -5,7 +5,7 @@
  * Date: 2018-01-21
  * Time: 12:09
  */
-require_once 'PowerTreit.php';
+require_once 'PowerTrait.php';
 require_once 'AbstractCar.php';
 require_once 'ButtonCar.php';
 require_once 'KeyCars.php';
