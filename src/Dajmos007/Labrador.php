@@ -12,6 +12,7 @@ namespace Dajmos007;
 
 class Labrador extends Dog
 {
+    //Addding ... properties from DogTrait :D
     use DogTrait;
 
 }

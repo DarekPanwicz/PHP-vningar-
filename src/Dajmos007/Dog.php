@@ -9,7 +9,9 @@ namespace Dajmos007;
 
 class Dog
 {
-protected $color= "Czerwony";
-protected $name;
+
+    //Dog properties will be Inherited in doberman, labrador classes
+    protected $color= "Czerwony";
+    protected $name;
 
 }

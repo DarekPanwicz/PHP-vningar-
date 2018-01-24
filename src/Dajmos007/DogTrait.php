@@ -11,5 +11,5 @@ namespace Dajmos007;
 
 trait DogTrait
 {
- //function is cooming :D
+ //function is cooming soon :D
 }

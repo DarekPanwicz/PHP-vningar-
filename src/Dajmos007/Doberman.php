@@ -13,16 +13,17 @@ namespace Dajmos007;
 
 class Doberman extends Dog
 {
+    //Addding ... properties from DogTrait :D
     use DogTrait;
 
-
+    //Sett name for darek object in main.php
     public function setName(string $name):string
     {
 
         $this->name= $name;
 
     }
-
+    //Get name for darek object in main.php
     public function getName():string
     {
         return $this->name;
