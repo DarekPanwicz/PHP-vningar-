@@ -10,7 +10,8 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-$darek = new Dajmos007\Doberman;
+
+$darek = new Dajmos007\Doberman();
 $darek->setName("Darek");
 $darek->getName();
 

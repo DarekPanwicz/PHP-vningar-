@@ -15,6 +15,7 @@ class Doberman extends Dog
 {
     use DogTrait;
 
+
     public function setName(string $name):string
     {
 
