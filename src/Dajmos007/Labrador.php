@@ -6,9 +6,9 @@
  * Time: 11:42
  */
 namespace Dajmos007;
-use DogTrait;
 
 class Labrador extends Dog
 {
+    use DogTrait;
 
 }

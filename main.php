@@ -8,10 +8,11 @@
 
 use Dajmos007;
 
-require_once "src/Dajmos007/Dog.php";
-require_once "src/Dajmos007/Doberman.php";
-require_once "src/Dajmos007/Labrador";
+require __DIR__ . '/vendor/autoload.php';
 
-$darek = new \dajmos007\Doberman;
+$darek = new \Dajmos007\Doberman;
 $darek->setName("Darek");
 echo $darek->getName();
+
+
+

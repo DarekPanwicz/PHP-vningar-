@@ -8,11 +8,12 @@
 
 declare(strict_types=1);
 
-use DogTrait;
+
 namespace Dajmos007;
 
 class Doberman extends Dog
 {
+    use DogTrait;
 
     public function setName(string $name):string
     {
