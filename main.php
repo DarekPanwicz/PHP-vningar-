@@ -42,7 +42,7 @@ preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
 //Adding new loop for saving 12 images files from webb (getposters)
 foreach ($matches[1] as $filename) {
     $time = new DateTime();
-    file_put_contents("logg/filmoteka.log", "Nr: $filename" ." ,".$time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
+    file_put_contents("logs/filmoteka.log", "Nr: $filename" ." ,".$time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
 
     //Getting file list from webb
     $getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/' . $filename . '.jpg');
@@ -50,7 +50,7 @@ foreach ($matches[1] as $filename) {
     file_put_contents("posters/" . str_ireplace([' ', ':'],['-',''],$titles[$filename-1]) . ".jpg", $getPosters);
 
     $time = new DateTime();
-    file_put_contents("logg/filmoteka.log", "Nr: $filename" ." ,". $time->format('Y-m-d H:i:s') . " Zakonczenie zapisywania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
+    file_put_contents("logs/filmoteka.log", "Nr: $filename" ." ,". $time->format('Y-m-d H:i:s') . " Zakonczenie zapisywania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
 }
 
 
@@ -58,7 +58,7 @@ foreach ($matches[1] as $filename) {
 foreach ($matches[1] as $filename) {
 
    $time = new DateTime();
-    file_put_contents("logg/filmoteka.log", "Nr: $filename" ." ,".$time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
+    file_put_contents("logs/filmoteka.log", "Nr: $filename" ." ,".$time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
     //Getting file list from webb - shots
    $getShots = file_get_contents('https://cytaty.eu/img/sda/shots/' . $filename . '.jpg');
 
