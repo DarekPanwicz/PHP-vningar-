@@ -1,0 +1,13 @@
+{
+    "name": "dajmos007/imdb",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Darek P",
+            "email": "dajmos007@gmail.com"
+        }
+    ],
+    "require": {
+
+    }
+}
