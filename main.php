@@ -7,6 +7,11 @@
  */
 declare(strict_types=1);
 
+$config = yaml_parse_file('config.yml');
+var_export($config);
+
+
+
 //Getting file from webb
 $getPoster = file_get_contents('https://upload.wikimedia.org/wikipedia/en/4/4f/The_Hobbit_-_The_Desolation_of_Smaug_theatrical_poster.jpg');
 
@@ -35,10 +40,6 @@ $matches= []; ///href="([0-9]+)\.jpg"/ - /znak rozpoczynajacy i konczacy pattern
 preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
 
 
-
-
-
-
 //Adding new loop for saving 12 images files from webb (getposters)
 foreach ($matches[1] as $filename) {
     $time = new DateTime();
@@ -57,13 +58,13 @@ foreach ($matches[1] as $filename) {
 
 
 //Adding new loop for saving 12 shots files from webb (getShots)
-for ($i = 1; $i <= 12; $i++) {
-
-    $time = new DateTime();
-    file_put_contents("logg/filmoteka.log", $time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu: $i  " . PHP_EOL, FILE_APPEND);
-    //Getting file list from webb - shots
-    $getShots = file_get_contents('https://cytaty.eu/img/sda/shots/' . $i . '.jpg');
-
-    file_put_contents("shots/" . $i . ".jpg", $getShots);
-}
+//for ($matches[1] as $filename) {
+//
+//    $time = new DateTime();
+//    file_put_contents("logg/filmoteka.log", "Nr: $filename" ." ,".$time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
+//    //Getting file list from webb - shots
+//    $getShots = file_get_contents('https://cytaty.eu/img/sda/shots/' . $filename . '.jpg');
+//
+//    file_put_contents("shots/" . $i . ".jpg", $getShots);
+//}
 
