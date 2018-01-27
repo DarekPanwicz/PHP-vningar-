@@ -16,21 +16,46 @@ file_put_contents('posters/img.jpg', $getPoster);
 //Getting file list from webb
 $getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/');
 
+$titles = [
+    "Pirates of Carribean",
+    "Dead Men tell No Tales",
+    "Rings",
+    "Blade Runner 2049",
+    "Thor",
+    "Get Out",
+    "Star Wars: The Last Jedi",
+    "Okja", "London Has Fallen",
+    "The Legend of Tarzan",
+    'The Founder',
+    "Captain America: Civil War",
+    "Spectre"];
+
 
 //Adding new loop for saving 12 images files from webb (getposters)
-for($i=1; $i<=12;$i++)
-{
-    //Getting file list from webb
-    $getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/'.$i.'.jpg');
+for ($i = 1; $i <= 12; $i++) {
+    $time = new DateTime();
+    file_put_contents("logg/filmoteka.log", $time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu:" . $titles[$i-1] . PHP_EOL, FILE_APPEND);
 
-    file_put_contents("posters/" .$i . ".jpg", $getPosters);
+    //Getting file list from webb
+    $getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/' . $i . '.jpg');
+
+    file_put_contents("posters/" . $titles[$i-1] . ".jpg", $getPosters);
+
+    $time = new DateTime();
+    file_put_contents("logg/filmoteka.log", $time->format('Y-m-d H:i:s') . " Zakonczenie zapisywania plakatu:" . $titles[$i-1] . PHP_EOL, FILE_APPEND);
+
+
 }
+
 
 //Adding new loop for saving 12 shots files from webb (getShots)
-for($i=1; $i<=12;$i++)
-{
-    //Getting file list from webb - shots
-    $getShots = file_get_contents('https://cytaty.eu/img/sda/shots/'.$i.'.jpg');
+for ($i = 1; $i <= 12; $i++) {
 
-    file_put_contents("shots/" .$i . ".jpg", $getShots);
+    $time = new DateTime();
+    file_put_contents("logg/filmoteka.log", $time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu: $i  " . PHP_EOL, FILE_APPEND);
+    //Getting file list from webb - shots
+    $getShots = file_get_contents('https://cytaty.eu/img/sda/shots/' . $i . '.jpg');
+
+    file_put_contents("shots/" . $i . ".jpg", $getShots);
 }
+
