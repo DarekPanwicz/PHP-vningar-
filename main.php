@@ -17,11 +17,20 @@ file_put_contents('posters/img.jpg', $getPoster);
 $getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/');
 
 
-//Adding new loop for saving 12 files from webb (getposters)
+//Adding new loop for saving 12 images files from webb (getposters)
 for($i=1; $i<=12;$i++)
 {
     //Getting file list from webb
     $getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/'.$i.'.jpg');
 
     file_put_contents("posters/" .$i . ".jpg", $getPosters);
+}
+
+//Adding new loop for saving 12 shots files from webb (getShots)
+for($i=1; $i<=12;$i++)
+{
+    //Getting file list from webb - shots
+    $getShots = file_get_contents('https://cytaty.eu/img/sda/shots/'.$i.'.jpg');
+
+    file_put_contents("shots/" .$i . ".jpg", $getShots);
 }
