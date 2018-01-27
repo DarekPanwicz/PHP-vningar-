@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace Dajmos007;
 
-class Doberman extends Dog
+class Doberman extends Dog implements AnimalsInterface
 {
     //Addding ... properties from DogTrait :D
     use DogTrait;
