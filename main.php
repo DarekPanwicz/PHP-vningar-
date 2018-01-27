@@ -8,8 +8,8 @@
 declare(strict_types=1);
 
 //Trzeba doinstalowac sobie yamla
-$config = yaml_parse_file('config.yml');
-var_export($config);
+/*$config = yaml_parse_file('config.yml');
+var_export($config);*/
 
 //Getting file from webb
 $getPoster = file_get_contents('https://upload.wikimedia.org/wikipedia/en/4/4f/The_Hobbit_-_The_Desolation_of_Smaug_theatrical_poster.jpg');
@@ -57,11 +57,14 @@ foreach ($matches[1] as $filename) {
 //Adding new loop for saving 12 shots files from webb (getShots)
 foreach ($matches[1] as $filename) {
 
-   $time = new DateTime();
-    file_put_contents("logs/filmoteka.log", "Nr: $filename" ." ,".$time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
+    $time = new DateTime();
+    file_put_contents("logs/filmoteka.log", "Nr: $filename" . " ," . $time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania shota" . $titles[$filename - 1] . PHP_EOL, FILE_APPEND);
     //Getting file list from webb - shots
-   $getShots = file_get_contents('https://cytaty.eu/img/sda/shots/' . $filename . '.jpg');
+    $getShots = file_get_contents('https://cytaty.eu/img/sda/shots/' . $filename . '.jpg');
 
-   file_put_contents("shots/" . $i . ".jpg", $getShots);
+    file_put_contents("shots/" . str_ireplace([' ', ':'], ['-', ''], $titles[$filename - 1]) . ".jpg", $getShots);
+
+    $time = new DateTime();
+    file_put_contents("logs/filmoteka.log", "Nr: $filename" . " ," . $time->format('Y-m-d H:i:s') . " Zakonczenie zapisywania shota:" . $titles[$filename - 1] . PHP_EOL, FILE_APPEND);
+
 }
-
