@@ -30,19 +30,25 @@ $titles = [
     "Captain America: Civil War",
     "Spectre"];
 
+$matches= []; ///href="([0-9]+)\.jpg"/ - /znak rozpoczynajacy i konczacy pattern
+preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
+// Find all links on webpage
+
+
+
 
 //Adding new loop for saving 12 images files from webb (getposters)
-for ($i = 1; $i <= 12; $i++) {
+foreach ($matches[1] as $filename) {
     $time = new DateTime();
-    file_put_contents("logg/filmoteka.log", $time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu:" . $titles[$i-1] . PHP_EOL, FILE_APPEND);
+    file_put_contents("logg/filmoteka.log", $time->format('Y-m-d H:i:s') . " Rozpoczecie pobierania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
 
     //Getting file list from webb
-    $getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/' . $i . '.jpg');
+    $getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/' . $filename . '.jpg');
 
-    file_put_contents("posters/" . $titles[$i-1] . ".jpg", $getPosters);
+    file_put_contents("posters/" . str_ireplace([' ', ':'],['-',''],$titles[$filename-1]) . ".jpg", $getPosters);
 
     $time = new DateTime();
-    file_put_contents("logg/filmoteka.log", $time->format('Y-m-d H:i:s') . " Zakonczenie zapisywania plakatu:" . $titles[$i-1] . PHP_EOL, FILE_APPEND);
+    file_put_contents("logg/filmoteka.log", $time->format('Y-m-d H:i:s') . " Zakonczenie zapisywania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
 
 
 }

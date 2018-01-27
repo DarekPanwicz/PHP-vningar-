@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="907bc3d9-9750-4f3a-9cac-d7e36c006983" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logg/filmoteka.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/posters/img.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.php" afterPath="$PROJECT_DIR$/main.php" />
     </list>
@@ -20,42 +34,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="36" column="126" lean-forward="false" selection-start-line="36" selection-start-column="126" selection-end-line="36" selection-end-column="126" />
+            <state relative-caret-position="367">
+              <caret line="33" column="108" lean-forward="false" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filmoteka.log" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/logg/filmoteka.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-930">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posters/1.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="2.jpg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shots/2.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posters/2.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -142,8 +132,8 @@
         <option value="$PROJECT_DIR$/src/Dajmos007/PowerTrait.php" />
         <option value="$PROJECT_DIR$/src/Dajmos007/PosterD.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/logg/filmoteka.log" />
+        <option value="$PROJECT_DIR$/main.php" />
       </list>
     </option>
   </component>
@@ -154,7 +144,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
     <option name="width" value="975" />
@@ -244,7 +234,12 @@
             <path>
               <item name="php3" type="b2602c69:ProjectViewProjectNode" />
               <item name="php3" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="logg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="posters" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="php3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php3" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shots" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="php3" type="b2602c69:ProjectViewProjectNode" />
@@ -301,10 +296,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101205000" />
+    <option name="totallyTimeSpent" value="105229000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1102" extended-state="7" />
+    <frame x="-11" y="-11" width="1942" height="1102" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1880388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -621,18 +616,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.php">
+    <entry file="file://$PROJECT_DIR$/logg/filmoteka.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="36" column="126" lean-forward="false" selection-start-line="36" selection-start-column="126" selection-end-line="36" selection-end-column="126" />
+        <state relative-caret-position="-3766">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logg/filmoteka.log">
+    <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-930">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="367">
+          <caret line="33" column="108" lean-forward="false" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
           <folding />
         </state>
       </provider>
