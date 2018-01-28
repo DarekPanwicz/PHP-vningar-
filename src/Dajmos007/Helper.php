@@ -15,15 +15,18 @@ class Helper
 
     public function findFilesFromHtml(string $getPosters)
     {
+        $matches= [];
 
-        return preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
+        preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
+
+        return $matches;
 
     }
 
-    public function convertTitlesToUrl($filename)
+    public function convertTitlesToUrl(string $filename)
     {
 
-       return str_ireplace([' ', ':'],['-',''],$filename;
+       return str_ireplace([' ', ':'],['-',''],$filename);
     }
 }
 
