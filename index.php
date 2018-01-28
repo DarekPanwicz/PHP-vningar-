@@ -10,3 +10,7 @@ declare(strict_types=1);
 
 require __DIR__ . '/vendor/autoload.php';
 
+$logger= new Dajmos007\Logger();
+$logger->addTologger(" - Czas pobrania pliku (Picture)");
+
+$logger->addTologger(" - Czas skonczenia pobrania pliku (Picture)");

@@ -12,4 +12,9 @@ namespace Dajmos007;
 class Picture
 {
 
+
+ public function test () {
+
+     return "mmmm test";
+ }
 }

@@ -13,6 +13,6 @@
     },
 
     "autoload": {
-        "psr-4": {"Acme\\": "src/Acme"}
+        "psr-4": {"Dajmos007\\": "src/Dajmos007"}
     }
 }
