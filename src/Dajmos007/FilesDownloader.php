@@ -12,4 +12,25 @@ namespace Dajmos007;
 class FilesDownloader
 {
 
+    //metoda downloadHTML
+    public function downloadHtml()
+    {
+        return $htmlWithPosterLinks = file_get_contents(Config::GET_POSTERS_LINKS);
+
+    }
+
+    //metoda downloadJPG
+    public function downloadPictures($filename, $categoryOfProduct)
+    {
+        //Getting
+       $downloadedPictures= file_get_contents(Config::GET_POSTERS_LINKS . $filename . '.jpg');
+       //Saving
+       $savingFile= file_put_contents("img/{$categoryOfProduct}/", $downloadedPictures . PHP_EOL, FILE_APPEND);
+        return $savingFile;
+    }
+
+
+
+
+
 }

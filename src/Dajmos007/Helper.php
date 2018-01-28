@@ -13,11 +13,11 @@ class Helper
 {
 
 
-    public function findFilesFromHtml(string $getPosters)
+    public function findFilesFromHtml(string $htmlWithPosterLinks)
     {
         $matches= [];
 
-        preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
+        preg_match_all( '/href="([0-9]+)\.jpg"/', $htmlWithPosterLinks, $matches);
 
         return $matches;
 

@@ -14,17 +14,15 @@ namespace Dajmos007;
 require __DIR__ . '/vendor/autoload.php';
 
 //Copying all posters pictures from webbsite.
-$getPosters = file_get_contents(Config::GET_POSTERS_LINKS);
+$htmlWithPosterLinks = file_get_contents(Config::GET_POSTERS_LINKS);
 
 /// REGEXP - taking pattern from links on the website to calculate number of files to import.
-$findFiles= new Helper();
-$findFiles->findFilesFromHtml($getPosters);
+$helper= new Helper();
+$matches= $helper->findFilesFromHtml($htmlWithPosterLinks);
 
 // Initiating new object, part of class Loger.
 $logger= new Loger();
-$helper= new Helper();
-
-$matches= $helper->findFilesfromHtml(file_get_contents(Config::GET_POSTERS_LINKS));
+$downloadedPicture= new FilesDownloader();
 
 //Lopp with posters.
 foreach ($matches[1] as $filename)
@@ -32,11 +30,12 @@ foreach ($matches[1] as $filename)
     //Save START time, string in the system log.
     $logger->addTologer( " Rozpoczecie pobierania PLAKATU:" . Config::TITLES[$filename-1]);
     //Getting posters file list from webb.
-    $getPosters = file_get_contents(Config::GET_POSTERS_LINKS . $filename . '.jpg');
+    $downloadedPicture->downloadPictures($filename, $categoryOfProduct="posters");
+
     //Save all Posters Files to img posters.
     file_put_contents(Config::SAVE_POSTERS_LINKS
         . $helper->convertTitlesToUrl(Config::TITLES[$filename-1])
-        . ".jpg", $getPosters);
+        . ".jpg", $downloadedPicture);
 
     //Save END time, string in the system log.
     $logger->addTologer( " Zakonczenie pobierania PLAKATU:" . Config::TITLES[$filename-1]);
@@ -49,11 +48,11 @@ foreach ($matches[1] as $filename)
     //Save START time, string in the system log.
     $logger->addTologer( " Rozpoczecie pobierania SHOTA:" . Config::TITLES[$filename-1]);
     //Getting shots file list from webb.
-    $getPosters = file_get_contents(Config::GET_SHOTS_LINKS . $filename . '.jpg');
+    $downloadedPicture->downloadPictures($filename, $categoryOfProduct="shots");
     //Save all Posters Files to img posters.
     file_put_contents(Config::SAVE_SHOTS_LINKS
         . $helper->convertTitlesToUrl(Config::TITLES[$filename-1])
-        . ".jpg", $getPosters);
+        . ".jpg", $downloadedPicture);
 
     //Save END time, string in the system log.
     $logger->addTologer( " Zakonczenie pobierania SHOTA:" . Config::TITLES[$filename-1]);
