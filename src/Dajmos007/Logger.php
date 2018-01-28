@@ -13,12 +13,12 @@ class Logger
 {
 
 
-    public function addTologger($loggerText)
+    public function addTologer($loggerText)
 
     {
         $time = new \DateTime();
         //We save time, string in the system log
-        file_put_contents("logs/filmotekaX.log", $time->format('Y-m-d H:i:s') . $loggerText . PHP_EOL, FILE_APPEND);
+        file_put_contents(Config::LOGS, $time->format('Y-m-d H:i:s') . $loggerText . PHP_EOL, FILE_APPEND);
 
     }
 
