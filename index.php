@@ -24,20 +24,39 @@ preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
 
 $logger= new Logger();
 
+//Lopp with posters
 foreach ($matches[1] as $filename)
 {
 
     //Save START time, string in the system log
-    $logger->addTologer( " Rozpoczecie pobierania plakatu:" . Config::TITLES[$filename-1]);
+    $logger->addTologer( " Rozpoczecie pobierania PLAKATU:" . Config::TITLES[$filename-1]);
 
-    //Getting file list from webb
+    //Getting posters file list from webb
     $getPosters = file_get_contents(Config::GET_POSTERS_LINKS . $filename . '.jpg');
     //Save all Posters Files to img posters
     file_put_contents(Config::SAVE_POSTERS_LINKS . str_ireplace([' ', ':'],['-',''],Config::TITLES[$filename-1]) . ".jpg", $getPosters);
 
     //Save END time, string in the system log
-    $logger->addTologer( " Zakonczenie pobierania plakatu:" . Config::TITLES[$filename-1]);
+    $logger->addTologer( " Zakonczenie pobierania PLAKATU:" . Config::TITLES[$filename-1]);
 }
+
+//Lopp with shots
+foreach ($matches[1] as $filename)
+{
+
+    //Save START time, string in the system log
+    $logger->addTologer( " Rozpoczecie pobierania SHOTA:" . Config::TITLES[$filename-1]);
+
+    //Getting shots file list from webb
+    $getPosters = file_get_contents(Config::GET_SHOTS_LINKS . $filename . '.jpg');
+    //Save all Posters Files to img posters
+    file_put_contents(Config::SAVE_SHOTS_LINKS . str_ireplace([' ', ':'],['-',''],Config::TITLES[$filename-1]) . ".jpg", $getPosters);
+
+    //Save END time, string in the system log
+    $logger->addTologer( " Zakonczenie pobierania SHOTA:" . Config::TITLES[$filename-1]);
+}
+
+
 
 
 
