@@ -12,16 +12,16 @@ declare(strict_types=1);
 var_export($config);*/
 
 //Getting one file from webb
-$getPoster = file_get_contents('https://upload.wikimedia.org/wikipedia/en/4/4f/The_Hobbit_-_The_Desolation_of_Smaug_theatrical_poster.jpg');
+/*$getPoster = file_get_contents('https://upload.wikimedia.org/wikipedia/en/4/4f/The_Hobbit_-_The_Desolation_of_Smaug_theatrical_poster.jpg');*/
 
 //Converting string to image and saving picture in poster folder
-file_put_contents('posters/img.jpg', $getPoster);
+/*file_put_contents('posters/img.jpg', $getPoster);*/
 
 //Getting file list from webb
-$getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/');
+/*$getPosters = file_get_contents('https://cytaty.eu/img/sda/posters/');*/
 
 // Array with movie names
-$titles = [
+/*$titles = [
     "Pirates of Carribean",
     "Dead Men tell No Tales",
     "Rings",
@@ -33,12 +33,12 @@ $titles = [
     "The Legend of Tarzan",
     'The Founder',
     "Captain America: Civil War",
-    "Spectre"];
+    "Spectre"];*/
 
 
-$matches= []; ///href="([0-9]+)\.jpg"/ - /znak rozpoczynajacy i konczacy pattern
+/*$matches= []; ///href="([0-9]+)\.jpg"/ - /znak rozpoczynajacy i konczacy pattern
 /// REGEXP - taking pattern from links on the website to calculate number of files to import
-preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
+preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);*/
 
 
 //Adding new loop for saving 12 images files from webb (getposters)
