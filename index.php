@@ -15,15 +15,13 @@ require __DIR__ . '/vendor/autoload.php';
 //Copying all posters pictures from webbsite
 $getPosters = file_get_contents(Config::GET_POSTERS_LINKS);
 
-
 $matches= [];
 
 /// REGEXP - taking pattern from links on the website to calculate number of files to import
 preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
 
-
-$logger= new Logger();
-
+// Initiating new object, part of class Loger
+$logger= new Loger();
 //Lopp with posters
 foreach ($matches[1] as $filename)
 {

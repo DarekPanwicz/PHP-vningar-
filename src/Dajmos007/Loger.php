@@ -9,15 +9,15 @@ declare(strict_types=1);
 
 namespace Dajmos007;
 
-class Logger
+class Loger
 {
 
-
+    //Function that adds logs to system
     public function addTologer($loggerText)
 
     {
         $time = new \DateTime();
-        //We save time, string in the system log
+        //Save time, string with object name, in the system log
         file_put_contents(Config::LOGS, $time->format('Y-m-d H:i:s') . $loggerText . PHP_EOL, FILE_APPEND);
 
     }

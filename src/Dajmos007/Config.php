@@ -14,13 +14,12 @@ class Config
 
     public const GET_POSTERS_LINKS= "https://cytaty.eu/img/sda/posters/";
     public const GET_SHOTS_LINKS= "https://cytaty.eu/img/sda/shots/";
-    public const SAVE_POSTERS_LINKS="/img/posters";
-    public const SAVE_SHOTS_LINKS="/img/shots";
+    public const SAVE_POSTERS_LINKS="img/posters/";
+    public const SAVE_SHOTS_LINKS="img/shots/";
     public const TITLES=
 
         [
-            "Pirates of Carribean",
-            "Dead Men tell No Tales",
+            "Pirates of Carribean Dead Men tell No Tales",
             "Rings",
             "Blade Runner 2049",
             "Thor",

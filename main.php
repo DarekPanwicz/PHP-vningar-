@@ -41,7 +41,7 @@ var_export($config);*/
 preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);*/
 
 
-//Adding new loop for saving 12 images files from webb (getposters)
+/*//Adding new loop for saving 12 images files from webb (getposters)
 foreach ($matches[1] as $filename)
 {
     //This metod taking time
@@ -56,10 +56,10 @@ foreach ($matches[1] as $filename)
 
     $time = new DateTime();
     file_put_contents("logs/filmoteka.log", "Nr: $filename" ." ,". $time->format('Y-m-d H:i:s') . " Zakonczenie zapisywania plakatu:" . $titles[$filename-1] . PHP_EOL, FILE_APPEND);
-}
+}*/
 
 
-//Adding new loop for saving 12 shots files from webb (getShots)
+/*//Adding new loop for saving 12 shots files from webb (getShots)
 foreach ($matches[1] as $filename) {
 
     $time = new DateTime();
@@ -72,4 +72,4 @@ foreach ($matches[1] as $filename) {
     $time = new DateTime();
     file_put_contents("logs/filmoteka.log", "Nr: $filename" . " ," . $time->format('Y-m-d H:i:s') . " Zakonczenie zapisywania shota:" . $titles[$filename - 1] . PHP_EOL, FILE_APPEND);
 
-}
+}*/
