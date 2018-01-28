@@ -12,4 +12,19 @@ namespace Dajmos007;
 class Helper
 {
 
+
+    public function findFilesFromHtml(string $getPosters)
+    {
+
+        return preg_match_all( '/href="([0-9]+)\.jpg"/', $getPosters, $matches);
+
+    }
+
+    public function convertTitlesToUrl($filename)
+    {
+
+       return str_ireplace([' ', ':'],['-',''],$filename;
+    }
 }
+
+
