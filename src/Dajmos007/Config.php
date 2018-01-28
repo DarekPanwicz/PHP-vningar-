@@ -33,7 +33,7 @@ class Config
         ];
 
 
-    public const LOGS = "logs/filmotekaX.log";
+    public const LOGS = "logs/filmoteka.log";
 
 
 }

@@ -7,9 +7,8 @@
  */
 namespace Dajmos007;
 
-class PostDownloader extends AbstractCar
+class PostDownloader
 {
-    use PowerTrait;
 
 
 }
