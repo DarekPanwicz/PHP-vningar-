@@ -23,10 +23,11 @@ class FilesDownloader
     public function downloadPictures($filename, $categoryOfProduct)
     {
         //Getting
-       $downloadedPictures= file_get_contents(Config::GET_POSTERS_LINKS . $filename . '.jpg');
+        $downloadedPictures= file_get_contents(Config::GET_POSTERS_LINKS . $filename . '.jpg');
        //Saving
-       $savingFile= file_put_contents("img/{$categoryOfProduct}/", $downloadedPictures . PHP_EOL, FILE_APPEND);
-        return $savingFile;
+
+        file_put_contents("img/{$categoryOfProduct}/", $downloadedPictures . PHP_EOL, FILE_APPEND);
+
     }
 
 
