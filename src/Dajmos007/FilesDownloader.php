@@ -20,7 +20,7 @@ class FilesDownloader
     }
 
     //metoda downloadJPG
-    public function downloadPictures($filename, $categoryOfProduct)
+    public function downloadPictures( string $filename, string $categoryOfProduct): void
     {
         //Getting
         $downloadedPictures= file_get_contents(Config::GET_POSTERS_LINKS . $filename . '.jpg');
