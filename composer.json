@@ -1,18 +1,13 @@
 {
-    "name": "dajmos007/imdb",
-    "type": "project",
+    "name": "rado/class",
     "authors": [
         {
-            "name": "Darek P",
-            "email": "dajmos007@gmail.com"
+            "name": "Radosław Ziemniewicz",
+            "email": "radoslaw.ziemniewicz@home.com.pl"
         }
     ],
-    "require": {
-
-
-    },
-
-    "autoload": {
-        "psr-4": {"Dajmos007\\": "src/Dajmos007"}
-    }
+    "require": {},
+        "autoload": {
+            "psr-4": {"Rado\\": "src/Rado"}
+    	}
 }
