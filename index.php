@@ -14,5 +14,5 @@ require __DIR__ . '/vendor/autoload.php';
 
 // niniejszy plik index.php jest plikiem uruchomieniowym, tworzymy tutaj
 // obiekt główny całej aplikacji i wskazujemy, jakie elementy będziemy pobierali
-$app = new \Rado\App\Kernel();
+$app = new \Dajmos007\App\Kernel();
 $app->run(['posters', 'shots']);
