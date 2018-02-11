@@ -8,3 +8,9 @@ CREATE TABLE IF NOT EXISTS `24769562_dariusz`.`Auta` (
   `ilosc drzwi` INT NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
+
+CREATE TABLE IF NOT EXISTS `24769562_dariusz`.`Numer VIN` (
+  `idNumer` INT UNSIGNED NOT NULL,
+  `Numer VIN` INT UNSIGNED NULL,
+  PRIMARY KEY (`idNumer`))
+ENGINE = InnoDB
