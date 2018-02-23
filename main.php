@@ -1,45 +1,52 @@
 <?php
-//Rozbuduj aplikację z zadania 1 o określoną ilość rund i tablicę wyników. Niech ilość rund wybierze użytkownik z zakresu
-//[1-5]. Niech serię rzutów wygrywa ten gracz, który wygrał większą ilość razy przy pojedynczych rzutach kostką.
 
 echo "Jak masz na imie: ";
+
 //Funkcja ktora pyta o imput
 $imie= fgets(STDIN);
 
 echo "Wpisz odpowiednia ilosc RUND od 1 do 5: ";
 $rundy= fgets(STDIN);
 
+if($rundy >5)
+{
+    echo "podales za duza liczbe DUDE, liczba nie moze byc wieksza jak 5. Wlacz program ponownie i wpisz odpowiednia liczbe" .PHP_EOL;
+    exit();
+}
 echo "[WCIŚNIJ ENTER, ABY RZUCIĆ KOSTKĄ]";
 fgets(STDIN);
 echo " " .PHP_EOL;
 
-$gracz =[];
-var_dump($gracz);
-$ai= [];
-var_dump($ai);
-for ($i=0; $i>$rundy; $i++)
+$losowanieGracz =[];
+$losowanieAi= [];
+
+
+//Dodanie petli ktora pobiera ilosc rund
+for ($i=1; $i<=$rundy; $i++)
 {
+    $losowanieGracz.= rand ( 1, 6);
+    $losowanieAi.= rand ( 1, 6);
 
-//Dodanie systemu losowania
-$losowanieGracz= rand ( 1, 6);
-$gracz= $losowanieGracz;
-$losowanieAi= rand ( 1, 6);
-$ai= $losowanieAi;
-}
 
-echo "Czesc " . $imie . " Wylosowales liczbe:" . " " . $losowanieGracz . PHP_EOL." A najnowszej generacji AI wylosowalo liczbe: " . $losowanieAi .PHP_EOL;
+echo "Czesc " . $imie . " Wylosowales liczbe:" . " " . $losowanieGracz. PHP_EOL." A najnowszej generacji AI wylosowalo liczbe: " . $losowanieAi .PHP_EOL;
 
 if ($losowanieGracz < $losowanieAi)
 {
-    echo "Wygrywa komputer". PHP_EOL;;
+    print_r("Wygrywa komputer". PHP_EOL .PHP_EOL);
 
-} else if ($losowanieGracz > $losowanieAi)
+} else if ($losowanieGracz> $losowanieAi)
 
 {
-    echo "Wygrywa Gracz". PHP_EOL;;
+    print_r("Wygrywa Gracz". PHP_EOL. PHP_EOL);
 
-} else if($losowanieGracz = $losowanieAi)
+} else if($losowanieGracz= $losowanieAi)
 {
-    echo "Jest remis". PHP_EOL;;
+    print_r("Jest remis". PHP_EOL. PHP_EOL);
 }
+
+
+
+}
+print_r("To jest zawartosc printa gracz: ". $losowanieGracz.PHP_EOL .PHP_EOL);
+print_r("To jest zawartosc printa AI: ". $losowanieAi.PHP_EOL .PHP_EOL);
 
